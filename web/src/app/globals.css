@@ -445,6 +445,14 @@ html[lang="hi"] .fp-caps {
   flex-direction: column;
   gap: 6px;
   box-shadow: none;
+  /* Without a width limit this panel shrink-to-fits its longest unwrapped label ("Roads
+     (current OpenStreetMap)") and can grow wider than a narrow map, overlapping Leaflet's
+     zoom buttons. Capping the width forces the label text to wrap instead. */
+  max-width: 190px;
+}
+.fp-map-toggles-float label {
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 .fp-map-toggles label {
   display: inline-flex;
@@ -590,3 +598,92 @@ html[lang="hi"] .fp-caps {
 
 /* header focus toggle: highlighted cards */
 .fp-focus { outline: 2px solid var(--blue); outline-offset: -2px; }
+
+/* ---------- phone width: the rail and title were never given a narrow-screen size (PHASE 13
+   mobile pass). Below 640px the 76px rail took a fifth of a 375px viewport and the 46px title
+   wrapped across two lines before any content; this scales both down instead of hiding anything. */
+@media (max-width: 640px) {
+  .fp-shell {
+    gap: 10px;
+    padding: 10px 10px 24px 10px;
+  }
+  .fp-rail {
+    width: 52px;
+    border-radius: 12px;
+    padding: 12px 0 10px 0;
+    gap: 2px;
+  }
+  .fp-logo {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    border-radius: 7px;
+    margin-bottom: 8px;
+  }
+  .fp-rail-btn {
+    width: 34px;
+    height: 34px;
+  }
+  .fp-rail-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+  .fp-rail-sep {
+    width: 28px;
+    margin: 8px 0;
+  }
+  .fp-title {
+    font-size: 26px;
+  }
+  .fp-subtitle {
+    font-size: 13px;
+  }
+  .fp-h2 {
+    font-size: 19px;
+  }
+  .fp-card {
+    padding: 12px 14px 16px 14px;
+  }
+  .fp-kpi-value {
+    font-size: 26px;
+  }
+  .fp-pill-btn {
+    padding: 6px 14px;
+    min-height: 32px;
+    font-size: 12px;
+  }
+  .fp-map-frame {
+    height: 280px;
+  }
+  .fp-map-frame-tall {
+    height: 360px;
+  }
+  /* The floating layer panel was wide enough on a narrow map to overlap Leaflet's zoom
+     buttons (top-left); shrink its font and padding so the two stay clear of each other. */
+  .fp-map-toggles-float {
+    top: 6px;
+    right: 6px;
+    padding: 5px 8px;
+    gap: 3px;
+    font-size: 10.5px;
+    max-width: 120px;
+  }
+  .fp-map-toggles-float input[type="checkbox"] {
+    width: 13px;
+    height: 13px;
+  }
+  /* Data tables (metrics, datasets, assumptions, isolation ranking) were breaking column
+     header words mid-letter ("blocked" -> "blo/cke/d") to fit a narrow screen. A table scrolls
+     fine as a block box with its own horizontal scrollbar; the column headers and cells keep
+     readable whole words instead of fighting the viewport for width. */
+  .fp-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+  }
+  .fp-table th,
+  .fp-table td {
+    white-space: nowrap;
+  }
+}
