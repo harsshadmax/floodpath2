@@ -140,6 +140,14 @@ def attach_to_origins(origins: pd.DataFrame, assignment: Dict[int, Optional[int]
     return out
 
 
+def node_population_weight(assignment: Dict[int, Optional[int]], zone_wards: gpd.GeoDataFrame) -> Dict[int, float]:
+    """Ward in-zone population for every graph node, for population-proportional origin sampling
+    (src.facilities.sample_origins). A node outside any ward is left out; the caller treats a
+    missing node as the smallest observed weight, not zero, so it can still be drawn."""
+    pop = zone_wards.set_index("ward_id")["population_in_zone"]
+    return {n: float(pop[w]) for n, w in assignment.items() if w is not None and w in pop.index}
+
+
 def report_json(report: Dict[str, object]) -> str:
     return json.dumps(report, indent=2)
 

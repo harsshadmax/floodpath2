@@ -62,10 +62,18 @@ class Config:
 
     # Metrics (A-06: an analysis parameter, not an official standard)
     COVERAGE_THRESHOLD_MIN: float = 30.0
-    N_ORIGINS: int = 20
+    # Raised from 20 to 120 (PHASE 11): 20 origins -- one per ward touching the zone -- was too thin
+    # to represent who is actually affected (standing gap: population impact is uncertain). Sampling
+    # is now population-weighted (see sample_origins) so a populous ward gets proportionally more
+    # origins instead of exactly one.
+    N_ORIGINS: int = 120
     MIN_ORIGINS: int = 10
-    MIN_FLOOD_ADJACENT_ORIGINS: int = 5
+    MIN_FLOOD_ADJACENT_ORIGINS: int = 30
     FLOOD_ADJACENT_RADIUS_M: float = 300.0  # A-10
+    # Bootstrap resamples (with replacement, weighted by population_weight) for the confidence
+    # interval reported next to each headline KPI.
+    BOOTSTRAP_RESAMPLES: int = 300
+    BOOTSTRAP_CI: Tuple[float, float] = (0.10, 0.90)  # 10th-90th percentile
     MAX_SNAP_DISTANCE_M: float = 300.0  # A-11
 
     # Optional rules

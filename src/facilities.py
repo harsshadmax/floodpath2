@@ -119,22 +119,44 @@ def suitable_facilities(df: pd.DataFrame, G: nx.MultiDiGraph, service: str = "em
     return keep[~far].reset_index(drop=True), excluded
 
 
-def sample_origins(G: nx.MultiDiGraph, observed_m, cfg: Config = CONFIG, seed: int | None = None) -> pd.DataFrame:
+def sample_origins(G: nx.MultiDiGraph, observed_m, cfg: Config = CONFIG, seed: int | None = None,
+                   node_weight: Dict[int, float] | None = None) -> pd.DataFrame:
     """N_ORIGINS graph nodes, seeded, with at least MIN_FLOOD_ADJACENT_ORIGINS within
     FLOOD_ADJACENT_RADIUS_M of the observed composite. Nodes come from the largest strongly connected
-    component so a baseline route exists. population_weight is the placeholder 1.0 (ward join skipped)."""
+    component so a baseline route exists.
+
+    `node_weight` (node_id -> ward population) makes the draw population-proportional: a node in a
+    populous ward is more likely to be picked, so a larger sample concentrates where more people are,
+    instead of giving every ward exactly one origin regardless of size. Nodes with no weight (outside
+    any ward, or ward data unavailable) get the smallest observed weight, not zero, so they can still
+    be drawn. Without `node_weight` the draw is uniform, and population_weight is set after the fact
+    by wards.attach_to_origins (or stays the placeholder 1.0 if ward data is unavailable)."""
     rng = np.random.default_rng(cfg.RANDOM_SEED if seed is None else seed)
     scc = max(nx.strongly_connected_components(G), key=len)
     ids, xy = _node_xy_metric(G, cfg)
     in_scc = np.array([n in scc for n in ids])
     dist_to_flood = impact.distance_to_flood(shapely_points(xy), observed_m)
     near = in_scc & (dist_to_flood <= cfg.FLOOD_ADJACENT_RADIUS_M)
+
+    def _draw(pool_idx: np.ndarray, size: int) -> np.ndarray:
+        if size <= 0 or len(pool_idx) == 0:
+            return np.array([], dtype=int)
+        size = min(size, len(pool_idx))
+        p = None
+        if node_weight:
+            w = np.array([node_weight.get(int(ids[j]), np.nan) for j in pool_idx], dtype=float)
+            if np.isfinite(w).any():
+                floor = np.nanmin(w[w > 0]) if np.any(w > 0) else 1.0
+                w = np.where(np.isfinite(w) & (w > 0), w, floor)
+                p = w / w.sum()
+        return rng.choice(pool_idx, size=size, replace=False, p=p)
+
     n_near = min(cfg.MIN_FLOOD_ADJACENT_ORIGINS, int(near.sum()))
-    pick_near = rng.choice(np.flatnonzero(near), size=n_near, replace=False) if n_near else np.array([], dtype=int)
+    pick_near = _draw(np.flatnonzero(near), n_near)
     rest = np.setdiff1d(np.flatnonzero(in_scc), pick_near)
-    pick_rest = rng.choice(rest, size=cfg.N_ORIGINS - n_near, replace=False)
+    pick_rest = _draw(rest, cfg.N_ORIGINS - len(pick_near))
     chosen = np.concatenate([pick_near, pick_rest]).astype(int)
-    rows = [{"origin_id": f"O{i + 1:02d}", "node_id": int(ids[j]), "latitude": G.nodes[ids[j]]["y"],
+    rows = [{"origin_id": f"O{i + 1:03d}", "node_id": int(ids[j]), "latitude": G.nodes[ids[j]]["y"],
              "longitude": G.nodes[ids[j]]["x"], "ward_id": "", "population_weight": 1.0,
              "flood_adjacent": bool(near[j]), "stratification_short": n_near < cfg.MIN_FLOOD_ADJACENT_ORIGINS}
             for i, j in enumerate(chosen)]

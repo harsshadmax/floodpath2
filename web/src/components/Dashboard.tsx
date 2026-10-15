@@ -73,11 +73,19 @@ export default function Dashboard() {
   const sparkOf = (pick: (x: MetricsFile["scenarios"][string]) => number | null) =>
     m ? <Spark values={SIM_ORDER.map((s) => pick(m.scenarios[s]))} selected={SIM_ORDER.indexOf(scenario)} /> : undefined;
   const offNote = metrics === "missing" ? T("state.metrics_missing") : T("state.not_built");
+  // A weighted-bootstrap 10th-90th percentile range, appended to a KPI's note so the point estimate
+  // never stands alone (see src.metrics.bootstrap_ci; null when the scenario has no reachable origin).
+  const ci = sm?.confidence_interval;
+  const ciNote = (range: [number, number] | null | undefined, fmt: (x: number) => string) =>
+    range ? " " + T("kpi.note_ci", { resamples: ci!.resamples, lo: fmt(range[0]), hi: fmt(range[1]) }) : "";
   const kpis = [
     {
       key: "kpi.time_increase",
       value: sm && sm.m1_time_increase_min.mean !== null ? `+${sm.m1_time_increase_min.mean.toFixed(1)} ${T("unit.minutes")}` : null,
-      note: sm && sm.m1_time_increase_min.mean !== null ? T("kpi.note_time", { n: sm.m1_time_increase_min.n, max: sm.m1_time_increase_min.max ?? 0 }) : undefined,
+      note: sm && sm.m1_time_increase_min.mean !== null
+        ? T("kpi.note_time", { n: sm.m1_time_increase_min.n, max: sm.m1_time_increase_min.max ?? 0 })
+          + ciNote(ci?.m1_time_increase_min, (x) => `+${x.toFixed(1)} ${T("unit.minutes")}`)
+        : undefined,
       none: sm ? T("kpi.note_time_none") : offNote,
       spark: sparkOf((x) => x.m1_time_increase_min.mean),
     },
@@ -91,14 +99,20 @@ export default function Dashboard() {
     {
       key: "kpi.reachability",
       value: sm ? fmtPct(sm.m3_reach_any) : null,
-      note: sm ? T("kpi.note_reach", { n: Math.round(sm.m3_reach_any * sm.n_origins), total: sm.n_origins }) : undefined,
+      note: sm
+        ? T("kpi.note_reach", { n: Math.round(sm.m3_reach_any * sm.n_origins), total: sm.n_origins })
+          + ciNote(ci?.m3_reach_any, fmtPct)
+        : undefined,
       none: offNote,
       spark: sparkOf((x) => x.m3_reach_any),
     },
     {
       key: "kpi.coverage",
       value: sm ? fmtPct(sm.m4_coverage_flood_aware) : null,
-      note: sm ? T("kpi.note_coverage", { min: sm.coverage_threshold_min, conv: fmtPct(sm.m4_coverage_conventional) }) : undefined,
+      note: sm
+        ? T("kpi.note_coverage", { min: sm.coverage_threshold_min, conv: fmtPct(sm.m4_coverage_conventional) })
+          + ciNote(ci?.m4_coverage_flood_aware, fmtPct)
+        : undefined,
       none: offNote,
       spark: sparkOf((x) => x.m4_coverage_flood_aware),
     },

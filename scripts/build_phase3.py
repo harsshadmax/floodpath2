@@ -29,13 +29,16 @@ def main() -> dict:
     print(suitable[["facility_id", "name", "node_id", "snap_m"]].to_string(index=False))
 
     scenarios = {s: impact.flood_union_metric(gpd.read_file(PROCESSED / f"flood_{s}.geojson")) for s in flood.SCENARIO_ORDER}
-    origins = fac.sample_origins(G, scenarios["observed"])
     try:
         zone_wards, _ = wards.load_zone_wards()
-        origins = wards.attach_to_origins(origins, wards.assign_nodes(G, zone_wards), zone_wards)
+        assignment = wards.assign_nodes(G, zone_wards)
+        node_weight = wards.node_population_weight(assignment, zone_wards)
+        origins = fac.sample_origins(G, scenarios["observed"], node_weight=node_weight)
+        origins = wards.attach_to_origins(origins, assignment, zone_wards)
         origins["population_basis"] = "ward_census_2011"
-        print("origin weights: Census 2011 ward populations (scaled to the study zone)")
+        print("origin weights: Census 2011 ward populations (scaled to the study zone); sampling was population-proportional")
     except wards.WardDataError as exc:
+        origins = fac.sample_origins(G, scenarios["observed"])
         origins["population_basis"] = "placeholder"
         print("origin weights: placeholder 1.0 (", exc, ")")
     origins.to_csv(PROCESSED / "origins.csv", index=False)

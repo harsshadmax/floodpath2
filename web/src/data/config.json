@@ -43,7 +43,7 @@
     },
     {
       "name": "N_ORIGINS",
-      "value": 20
+      "value": 120
     },
     {
       "name": "ROBUSTNESS_RUNS",

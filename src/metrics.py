@@ -37,9 +37,48 @@ def _stats(values: List[float]) -> Dict[str, Optional[float]]:
             "max": round(float(max(values)), 2), "n": len(values)}
 
 
+def bootstrap_ci(results: List[route.RouteResult], origins: pd.DataFrame, cfg: Config = CONFIG) -> Dict[str, object]:
+    """Weighted-bootstrap confidence interval for the three headline KPIs, so each one reports a
+    range instead of a single point estimate. Resamples origins with replacement, cfg.BOOTSTRAP_RESAMPLES
+    times, with each origin's draw probability proportional to its population_weight (so the resampling
+    distribution matches the population-weighted statistic, not a plain unweighted one). Reports the
+    cfg.BOOTSTRAP_CI percentiles (default 10th-90th) of each bootstrap statistic's distribution."""
+    rng = np.random.default_rng(cfg.RANDOM_SEED + 200)
+    n = len(results)
+    w = origins["population_weight"].to_numpy(dtype=float)
+    p = w / w.sum()
+    thr = cfg.COVERAGE_THRESHOLD_MIN
+    reach = np.array([r.reachable for r in results], dtype=float)
+    t_fa = np.array([r.time_min if r.reachable else np.inf for r in results], dtype=float)
+    extra = np.array([(r.time_min - r.baseline_time_min) if r.reachable else np.nan for r in results], dtype=float)
+    idx = np.arange(n)
+    reach_draws, cov_draws, m1_draws = [], [], []
+    for _ in range(cfg.BOOTSTRAP_RESAMPLES):
+        pick = rng.choice(idx, size=n, replace=True, p=p)
+        reach_draws.append(float(reach[pick].mean()))
+        cov_draws.append(float((t_fa[pick] <= thr).mean()))
+        picked_extra = extra[pick]
+        with np.errstate(invalid="ignore"):
+            m1_draws.append(float(np.nanmean(picked_extra)) if np.isfinite(picked_extra).any() else float("nan"))
+    lo, hi = cfg.BOOTSTRAP_CI
+
+    def _ci(draws: List[float], digits: int) -> Optional[List[float]]:
+        if not np.isfinite(draws).any():
+            return None
+        return [round(float(np.nanquantile(draws, lo)), digits), round(float(np.nanquantile(draws, hi)), digits)]
+
+    return {
+        "resamples": cfg.BOOTSTRAP_RESAMPLES, "percentiles": list(cfg.BOOTSTRAP_CI),
+        "m1_time_increase_min": _ci(m1_draws, 2),
+        "m3_reach_any": _ci(reach_draws, 3),
+        "m4_coverage_flood_aware": _ci(cov_draws, 3),
+    }
+
+
 def scenario_metrics(results: List[route.RouteResult], origins: pd.DataFrame, facilities: pd.DataFrame,
                      cfg: Config = CONFIG) -> Dict[str, object]:
-    """M1 to M4 for one scenario (M5 comes from robustness())."""
+    """M1 to M4 for one scenario (M5 comes from robustness()), plus a bootstrap confidence interval
+    for the three headline numbers (see bootstrap_ci)."""
     w = origins["population_weight"].to_numpy(dtype=float)
     # Travel-time increase: flood-aware time minus the unflooded shortest time, for every origin that still
     # reaches a facility (this includes origins whose conventional route is blocked).
@@ -67,6 +106,7 @@ def scenario_metrics(results: List[route.RouteResult], origins: pd.DataFrame, fa
         "m4_coverage_conventional": round(cov_conv, 3),
         "m4_coverage_difference": round(cov_fa - cov_conv, 3),
         "coverage_threshold_min": thr,
+        "confidence_interval": bootstrap_ci(results, origins, cfg),
     }
 
 

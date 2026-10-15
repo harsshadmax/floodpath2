@@ -27,6 +27,13 @@ export type ScenarioMetrics = {
   edge_classes: { passable: number; at_risk: number; blocked: number };
   origins: Origin[];
   robustness: { runs: number; overall: number; share_changed_at_least_once: number } | null;
+  confidence_interval: {
+    resamples: number;
+    percentiles: [number, number];
+    m1_time_increase_min: [number, number] | null;
+    m3_reach_any: [number, number] | null;
+    m4_coverage_flood_aware: [number, number] | null;
+  };
 };
 export type MetricsFile = {
   population_basis?: string;

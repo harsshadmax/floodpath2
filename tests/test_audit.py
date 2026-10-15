@@ -58,7 +58,7 @@ def test_generated_audit_file_if_built():
     data = json.loads(path.read_text(encoding="utf-8"))
     assert set(data) == {"observed", "mild", "moderate", "severe"}
     for scen, docs in data.items():
-        assert len(docs) == 26
+        assert len(docs) == 6 + CONFIG.N_ORIGINS  # 6 simulated ambulance starts + the sample origins
         for d in docs.values():
             assert set(audit.REQUIRED_FIELDS) <= set(d)
             if d["result"]:

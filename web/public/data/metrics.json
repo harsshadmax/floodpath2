@@ -1,7 +1,7 @@
 {
  "generated_on": "2026-10-15",
  "population_basis": "ward_census_2011",
- "n_origins": 20,
+ "n_origins": 120,
  "n_reports": 2443,
  "facilities": [
   {
@@ -34,109 +34,609 @@
  ],
  "origins": [
   {
-   "id": "O01",
-   "lat": 13.06724,
-   "lon": 80.25301
+   "id": "O001",
+   "lat": 13.04916,
+   "lon": 80.22764
   },
   {
-   "id": "O02",
-   "lat": 13.06444,
-   "lon": 80.22785
+   "id": "O002",
+   "lat": 13.07916,
+   "lon": 80.20638
   },
   {
-   "id": "O03",
-   "lat": 13.02834,
-   "lon": 80.21143
+   "id": "O003",
+   "lat": 13.0774,
+   "lon": 80.25326
   },
   {
-   "id": "O04",
-   "lat": 13.09896,
-   "lon": 80.25631
+   "id": "O004",
+   "lat": 13.09311,
+   "lon": 80.24405
   },
   {
-   "id": "O05",
-   "lat": 13.06618,
-   "lon": 80.21189
+   "id": "O005",
+   "lat": 13.02641,
+   "lon": 80.21974
   },
   {
-   "id": "O06",
-   "lat": 13.09061,
-   "lon": 80.2689
+   "id": "O006",
+   "lat": 13.03717,
+   "lon": 80.24299
   },
   {
-   "id": "O07",
-   "lat": 13.07163,
-   "lon": 80.24398
+   "id": "O007",
+   "lat": 13.09456,
+   "lon": 80.25954
   },
   {
-   "id": "O08",
-   "lat": 13.09634,
-   "lon": 80.26397
+   "id": "O008",
+   "lat": 13.09959,
+   "lon": 80.2353
   },
   {
-   "id": "O09",
-   "lat": 13.07498,
-   "lon": 80.22652
+   "id": "O009",
+   "lat": 13.08791,
+   "lon": 80.22505
   },
   {
-   "id": "O10",
-   "lat": 13.06128,
-   "lon": 80.26981
+   "id": "O010",
+   "lat": 13.09762,
+   "lon": 80.26706
   },
   {
-   "id": "O11",
-   "lat": 13.06215,
-   "lon": 80.23788
+   "id": "O011",
+   "lat": 13.09767,
+   "lon": 80.25398
   },
   {
-   "id": "O12",
-   "lat": 13.09089,
-   "lon": 80.26326
+   "id": "O012",
+   "lat": 13.02323,
+   "lon": 80.26307
   },
   {
-   "id": "O13",
-   "lat": 13.0407,
-   "lon": 80.25836
+   "id": "O013",
+   "lat": 13.01994,
+   "lon": 80.21896
   },
   {
-   "id": "O14",
-   "lat": 13.07485,
-   "lon": 80.22841
+   "id": "O014",
+   "lat": 13.06735,
+   "lon": 80.22199
   },
   {
-   "id": "O15",
-   "lat": 13.03509,
-   "lon": 80.25994
+   "id": "O015",
+   "lat": 13.0632,
+   "lon": 80.26828
   },
   {
-   "id": "O16",
-   "lat": 13.08346,
-   "lon": 80.26679
+   "id": "O016",
+   "lat": 13.07825,
+   "lon": 80.21424
   },
   {
-   "id": "O17",
-   "lat": 13.02134,
-   "lon": 80.26735
+   "id": "O017",
+   "lat": 13.03077,
+   "lon": 80.21436
   },
   {
-   "id": "O18",
-   "lat": 13.08178,
-   "lon": 80.24278
+   "id": "O018",
+   "lat": 13.05683,
+   "lon": 80.23317
   },
   {
-   "id": "O19",
-   "lat": 13.07054,
-   "lon": 80.26387
+   "id": "O019",
+   "lat": 13.02124,
+   "lon": 80.23244
   },
   {
-   "id": "O20",
-   "lat": 13.05545,
-   "lon": 80.21356
+   "id": "O020",
+   "lat": 13.0184,
+   "lon": 80.22073
+  },
+  {
+   "id": "O021",
+   "lat": 13.02964,
+   "lon": 80.2273
+  },
+  {
+   "id": "O022",
+   "lat": 13.09123,
+   "lon": 80.25489
+  },
+  {
+   "id": "O023",
+   "lat": 13.08582,
+   "lon": 80.24842
+  },
+  {
+   "id": "O024",
+   "lat": 13.01434,
+   "lon": 80.24578
+  },
+  {
+   "id": "O025",
+   "lat": 13.09512,
+   "lon": 80.2662
+  },
+  {
+   "id": "O026",
+   "lat": 13.0479,
+   "lon": 80.22151
+  },
+  {
+   "id": "O027",
+   "lat": 13.09257,
+   "lon": 80.22103
+  },
+  {
+   "id": "O028",
+   "lat": 13.03761,
+   "lon": 80.2396
+  },
+  {
+   "id": "O029",
+   "lat": 13.02104,
+   "lon": 80.26101
+  },
+  {
+   "id": "O030",
+   "lat": 13.06423,
+   "lon": 80.21519
+  },
+  {
+   "id": "O031",
+   "lat": 13.06636,
+   "lon": 80.21647
+  },
+  {
+   "id": "O032",
+   "lat": 13.04141,
+   "lon": 80.24462
+  },
+  {
+   "id": "O033",
+   "lat": 13.06467,
+   "lon": 80.21444
+  },
+  {
+   "id": "O034",
+   "lat": 13.08623,
+   "lon": 80.23789
+  },
+  {
+   "id": "O035",
+   "lat": 13.09286,
+   "lon": 80.22325
+  },
+  {
+   "id": "O036",
+   "lat": 13.02669,
+   "lon": 80.23302
+  },
+  {
+   "id": "O037",
+   "lat": 13.09033,
+   "lon": 80.21814
+  },
+  {
+   "id": "O038",
+   "lat": 13.09178,
+   "lon": 80.2279
+  },
+  {
+   "id": "O039",
+   "lat": 13.08266,
+   "lon": 80.20806
+  },
+  {
+   "id": "O040",
+   "lat": 13.05637,
+   "lon": 80.21901
+  },
+  {
+   "id": "O041",
+   "lat": 13.02699,
+   "lon": 80.21182
+  },
+  {
+   "id": "O042",
+   "lat": 13.05276,
+   "lon": 80.24113
+  },
+  {
+   "id": "O043",
+   "lat": 13.0841,
+   "lon": 80.23219
+  },
+  {
+   "id": "O044",
+   "lat": 13.06422,
+   "lon": 80.21269
+  },
+  {
+   "id": "O045",
+   "lat": 13.04327,
+   "lon": 80.25587
+  },
+  {
+   "id": "O046",
+   "lat": 13.02438,
+   "lon": 80.22819
+  },
+  {
+   "id": "O047",
+   "lat": 13.03228,
+   "lon": 80.20753
+  },
+  {
+   "id": "O048",
+   "lat": 13.0337,
+   "lon": 80.21544
+  },
+  {
+   "id": "O049",
+   "lat": 13.06389,
+   "lon": 80.2127
+  },
+  {
+   "id": "O050",
+   "lat": 13.08982,
+   "lon": 80.21376
+  },
+  {
+   "id": "O051",
+   "lat": 13.05756,
+   "lon": 80.21603
+  },
+  {
+   "id": "O052",
+   "lat": 13.06274,
+   "lon": 80.26712
+  },
+  {
+   "id": "O053",
+   "lat": 13.09694,
+   "lon": 80.23166
+  },
+  {
+   "id": "O054",
+   "lat": 13.05687,
+   "lon": 80.22749
+  },
+  {
+   "id": "O055",
+   "lat": 13.07604,
+   "lon": 80.22295
+  },
+  {
+   "id": "O056",
+   "lat": 13.05623,
+   "lon": 80.25092
+  },
+  {
+   "id": "O057",
+   "lat": 13.09482,
+   "lon": 80.22477
+  },
+  {
+   "id": "O058",
+   "lat": 13.07045,
+   "lon": 80.21135
+  },
+  {
+   "id": "O059",
+   "lat": 13.0891,
+   "lon": 80.21373
+  },
+  {
+   "id": "O060",
+   "lat": 13.05303,
+   "lon": 80.2571
+  },
+  {
+   "id": "O061",
+   "lat": 13.06308,
+   "lon": 80.22847
+  },
+  {
+   "id": "O062",
+   "lat": 13.0941,
+   "lon": 80.22264
+  },
+  {
+   "id": "O063",
+   "lat": 13.03626,
+   "lon": 80.22535
+  },
+  {
+   "id": "O064",
+   "lat": 13.02428,
+   "lon": 80.25463
+  },
+  {
+   "id": "O065",
+   "lat": 13.02398,
+   "lon": 80.22772
+  },
+  {
+   "id": "O066",
+   "lat": 13.07439,
+   "lon": 80.25607
+  },
+  {
+   "id": "O067",
+   "lat": 13.01666,
+   "lon": 80.22893
+  },
+  {
+   "id": "O068",
+   "lat": 13.06056,
+   "lon": 80.20736
+  },
+  {
+   "id": "O069",
+   "lat": 13.03344,
+   "lon": 80.26409
+  },
+  {
+   "id": "O070",
+   "lat": 13.02767,
+   "lon": 80.21153
+  },
+  {
+   "id": "O071",
+   "lat": 13.07453,
+   "lon": 80.22934
+  },
+  {
+   "id": "O072",
+   "lat": 13.07089,
+   "lon": 80.21159
+  },
+  {
+   "id": "O073",
+   "lat": 13.06976,
+   "lon": 80.24306
+  },
+  {
+   "id": "O074",
+   "lat": 13.09181,
+   "lon": 80.21042
+  },
+  {
+   "id": "O075",
+   "lat": 13.04948,
+   "lon": 80.23648
+  },
+  {
+   "id": "O076",
+   "lat": 13.04511,
+   "lon": 80.21024
+  },
+  {
+   "id": "O077",
+   "lat": 13.04618,
+   "lon": 80.20937
+  },
+  {
+   "id": "O078",
+   "lat": 13.05305,
+   "lon": 80.23837
+  },
+  {
+   "id": "O079",
+   "lat": 13.059,
+   "lon": 80.23004
+  },
+  {
+   "id": "O080",
+   "lat": 13.09409,
+   "lon": 80.23362
+  },
+  {
+   "id": "O081",
+   "lat": 13.04351,
+   "lon": 80.23737
+  },
+  {
+   "id": "O082",
+   "lat": 13.07345,
+   "lon": 80.21534
+  },
+  {
+   "id": "O083",
+   "lat": 13.07093,
+   "lon": 80.24729
+  },
+  {
+   "id": "O084",
+   "lat": 13.05866,
+   "lon": 80.2525
+  },
+  {
+   "id": "O085",
+   "lat": 13.07056,
+   "lon": 80.23119
+  },
+  {
+   "id": "O086",
+   "lat": 13.01907,
+   "lon": 80.22114
+  },
+  {
+   "id": "O087",
+   "lat": 13.02222,
+   "lon": 80.22026
+  },
+  {
+   "id": "O088",
+   "lat": 13.09274,
+   "lon": 80.24473
+  },
+  {
+   "id": "O089",
+   "lat": 13.05965,
+   "lon": 80.24361
+  },
+  {
+   "id": "O090",
+   "lat": 13.0715,
+   "lon": 80.2447
+  },
+  {
+   "id": "O091",
+   "lat": 13.02357,
+   "lon": 80.25884
+  },
+  {
+   "id": "O092",
+   "lat": 13.0895,
+   "lon": 80.24534
+  },
+  {
+   "id": "O093",
+   "lat": 13.09783,
+   "lon": 80.26472
+  },
+  {
+   "id": "O094",
+   "lat": 13.02797,
+   "lon": 80.20571
+  },
+  {
+   "id": "O095",
+   "lat": 13.05779,
+   "lon": 80.20727
+  },
+  {
+   "id": "O096",
+   "lat": 13.01778,
+   "lon": 80.22072
+  },
+  {
+   "id": "O097",
+   "lat": 13.07889,
+   "lon": 80.22878
+  },
+  {
+   "id": "O098",
+   "lat": 13.02144,
+   "lon": 80.21989
+  },
+  {
+   "id": "O099",
+   "lat": 13.04728,
+   "lon": 80.25854
+  },
+  {
+   "id": "O100",
+   "lat": 13.08442,
+   "lon": 80.21018
+  },
+  {
+   "id": "O101",
+   "lat": 13.02535,
+   "lon": 80.22796
+  },
+  {
+   "id": "O102",
+   "lat": 13.08108,
+   "lon": 80.23211
+  },
+  {
+   "id": "O103",
+   "lat": 13.04082,
+   "lon": 80.21794
+  },
+  {
+   "id": "O104",
+   "lat": 13.07993,
+   "lon": 80.24403
+  },
+  {
+   "id": "O105",
+   "lat": 13.09037,
+   "lon": 80.25299
+  },
+  {
+   "id": "O106",
+   "lat": 13.07885,
+   "lon": 80.25666
+  },
+  {
+   "id": "O107",
+   "lat": 13.09702,
+   "lon": 80.26707
+  },
+  {
+   "id": "O108",
+   "lat": 13.04193,
+   "lon": 80.2151
+  },
+  {
+   "id": "O109",
+   "lat": 13.0258,
+   "lon": 80.22803
+  },
+  {
+   "id": "O110",
+   "lat": 13.09806,
+   "lon": 80.2657
+  },
+  {
+   "id": "O111",
+   "lat": 13.09391,
+   "lon": 80.25019
+  },
+  {
+   "id": "O112",
+   "lat": 13.0284,
+   "lon": 80.2167
+  },
+  {
+   "id": "O113",
+   "lat": 13.0617,
+   "lon": 80.20772
+  },
+  {
+   "id": "O114",
+   "lat": 13.03041,
+   "lon": 80.22266
+  },
+  {
+   "id": "O115",
+   "lat": 13.01998,
+   "lon": 80.24031
+  },
+  {
+   "id": "O116",
+   "lat": 13.07115,
+   "lon": 80.2392
+  },
+  {
+   "id": "O117",
+   "lat": 13.02921,
+   "lon": 80.22724
+  },
+  {
+   "id": "O118",
+   "lat": 13.0646,
+   "lon": 80.20764
+  },
+  {
+   "id": "O119",
+   "lat": 13.06741,
+   "lon": 80.21783
+  },
+  {
+   "id": "O120",
+   "lat": 13.01817,
+   "lon": 80.24262
   }
  ],
  "scenarios": {
   "observed": {
-   "n_origins": 20,
+   "n_origins": 120,
    "m1_time_increase_min": {
     "mean": null,
     "median": null,
@@ -155,6 +655,22 @@
    "m4_coverage_conventional": 0.0,
    "m4_coverage_difference": 0.0,
    "coverage_threshold_min": 30.0,
+   "confidence_interval": {
+    "resamples": 300,
+    "percentiles": [
+     0.1,
+     0.9
+    ],
+    "m1_time_increase_min": null,
+    "m3_reach_any": [
+     0.0,
+     0.0
+    ],
+    "m4_coverage_flood_aware": [
+     0.0,
+     0.0
+    ]
+   },
    "share_of_reports": null,
    "edge_classes": {
     "passable": 4676,
@@ -163,208 +679,1127 @@
    },
    "origins": [
     {
-     "id": "O01",
+     "id": "O001",
      "facility": null,
      "reachable": false,
      "baseline_drivable": false,
      "time_min": null,
-     "baseline_time_min": 6.21,
-     "blocked_on_baseline": 31
+     "baseline_time_min": 8.74,
+     "blocked_on_baseline": 82
     },
     {
-     "id": "O02",
+     "id": "O002",
      "facility": null,
      "reachable": false,
      "baseline_drivable": false,
      "time_min": null,
-     "baseline_time_min": 5.13,
-     "blocked_on_baseline": 20
-    },
-    {
-     "id": "O03",
-     "facility": null,
-     "reachable": false,
-     "baseline_drivable": false,
-     "time_min": null,
-     "baseline_time_min": 5.15,
-     "blocked_on_baseline": 35
-    },
-    {
-     "id": "O04",
-     "facility": null,
-     "reachable": false,
-     "baseline_drivable": false,
-     "time_min": null,
-     "baseline_time_min": 2.95,
-     "blocked_on_baseline": 17
-    },
-    {
-     "id": "O05",
-     "facility": null,
-     "reachable": false,
-     "baseline_drivable": false,
-     "time_min": null,
-     "baseline_time_min": 5.57,
-     "blocked_on_baseline": 40
-    },
-    {
-     "id": "O06",
-     "facility": null,
-     "reachable": false,
-     "baseline_drivable": false,
-     "time_min": null,
-     "baseline_time_min": 2.63,
-     "blocked_on_baseline": 20
-    },
-    {
-     "id": "O07",
-     "facility": null,
-     "reachable": false,
-     "baseline_drivable": false,
-     "time_min": null,
-     "baseline_time_min": 6.11,
-     "blocked_on_baseline": 29
-    },
-    {
-     "id": "O08",
-     "facility": null,
-     "reachable": false,
-     "baseline_drivable": false,
-     "time_min": null,
-     "baseline_time_min": 3.19,
-     "blocked_on_baseline": 25
-    },
-    {
-     "id": "O09",
-     "facility": null,
-     "reachable": false,
-     "baseline_drivable": false,
-     "time_min": null,
-     "baseline_time_min": 0.8,
-     "blocked_on_baseline": 5
-    },
-    {
-     "id": "O10",
-     "facility": null,
-     "reachable": false,
-     "baseline_drivable": false,
-     "time_min": null,
-     "baseline_time_min": 8.76,
-     "blocked_on_baseline": 49
-    },
-    {
-     "id": "O11",
-     "facility": null,
-     "reachable": false,
-     "baseline_drivable": false,
-     "time_min": null,
-     "baseline_time_min": 6.34,
-     "blocked_on_baseline": 23
-    },
-    {
-     "id": "O12",
-     "facility": null,
-     "reachable": false,
-     "baseline_drivable": false,
-     "time_min": null,
-     "baseline_time_min": 1.76,
+     "baseline_time_min": 4.88,
      "blocked_on_baseline": 12
     },
     {
-     "id": "O13",
+     "id": "O003",
      "facility": null,
      "reachable": false,
      "baseline_drivable": false,
      "time_min": null,
-     "baseline_time_min": 10.07,
-     "blocked_on_baseline": 75
+     "baseline_time_min": 3.85,
+     "blocked_on_baseline": 29
     },
     {
-     "id": "O14",
-     "facility": null,
-     "reachable": false,
-     "baseline_drivable": false,
-     "time_min": null,
-     "baseline_time_min": 1.2,
-     "blocked_on_baseline": 6
-    },
-    {
-     "id": "O15",
-     "facility": null,
-     "reachable": false,
-     "baseline_drivable": false,
-     "time_min": null,
-     "baseline_time_min": 10.88,
-     "blocked_on_baseline": 78
-    },
-    {
-     "id": "O16",
-     "facility": null,
-     "reachable": false,
-     "baseline_drivable": false,
-     "time_min": null,
-     "baseline_time_min": 2.56,
-     "blocked_on_baseline": 23
-    },
-    {
-     "id": "O17",
-     "facility": null,
-     "reachable": false,
-     "baseline_drivable": false,
-     "time_min": null,
-     "baseline_time_min": 14.24,
-     "blocked_on_baseline": 54
-    },
-    {
-     "id": "O18",
+     "id": "O004",
      "facility": null,
      "reachable": false,
      "baseline_drivable": false,
      "time_min": null,
      "baseline_time_min": 4.59,
+     "blocked_on_baseline": 32
+    },
+    {
+     "id": "O005",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 2.69,
+     "blocked_on_baseline": 16
+    },
+    {
+     "id": "O006",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 7.04,
+     "blocked_on_baseline": 51
+    },
+    {
+     "id": "O007",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 2.23,
+     "blocked_on_baseline": 13
+    },
+    {
+     "id": "O008",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 6.48,
+     "blocked_on_baseline": 40
+    },
+    {
+     "id": "O009",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 2.84,
+     "blocked_on_baseline": 9
+    },
+    {
+     "id": "O010",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 3.98,
+     "blocked_on_baseline": 36
+    },
+    {
+     "id": "O011",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 2.75,
+     "blocked_on_baseline": 13
+    },
+    {
+     "id": "O012",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 11.77,
+     "blocked_on_baseline": 47
+    },
+    {
+     "id": "O013",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 1.88,
+     "blocked_on_baseline": 10
+    },
+    {
+     "id": "O014",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.61,
+     "blocked_on_baseline": 14
+    },
+    {
+     "id": "O015",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 8.3,
+     "blocked_on_baseline": 48
+    },
+    {
+     "id": "O016",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 3.92,
+     "blocked_on_baseline": 8
+    },
+    {
+     "id": "O017",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.87,
+     "blocked_on_baseline": 26
+    },
+    {
+     "id": "O018",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 6.87,
+     "blocked_on_baseline": 24
+    },
+    {
+     "id": "O019",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 3.93,
+     "blocked_on_baseline": 12
+    },
+    {
+     "id": "O020",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 1.71,
+     "blocked_on_baseline": 11
+    },
+    {
+     "id": "O021",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 3.03,
+     "blocked_on_baseline": 19
+    },
+    {
+     "id": "O022",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 1.1,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O023",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 3.16,
+     "blocked_on_baseline": 31
+    },
+    {
+     "id": "O024",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 9.49,
+     "blocked_on_baseline": 35
+    },
+    {
+     "id": "O025",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 3.36,
+     "blocked_on_baseline": 28
+    },
+    {
+     "id": "O026",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 7.2,
+     "blocked_on_baseline": 70
+    },
+    {
+     "id": "O027",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.16,
+     "blocked_on_baseline": 20
+    },
+    {
+     "id": "O028",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 6.29,
+     "blocked_on_baseline": 45
+    },
+    {
+     "id": "O029",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 11.95,
+     "blocked_on_baseline": 45
+    },
+    {
+     "id": "O030",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.87,
+     "blocked_on_baseline": 31
+    },
+    {
+     "id": "O031",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.6,
+     "blocked_on_baseline": 35
+    },
+    {
+     "id": "O032",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 8.06,
+     "blocked_on_baseline": 60
+    },
+    {
+     "id": "O033",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.63,
+     "blocked_on_baseline": 30
+    },
+    {
+     "id": "O034",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.46,
+     "blocked_on_baseline": 33
+    },
+    {
+     "id": "O035",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 3.8,
+     "blocked_on_baseline": 20
+    },
+    {
+     "id": "O036",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 3.51,
+     "blocked_on_baseline": 9
+    },
+    {
+     "id": "O037",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.44,
+     "blocked_on_baseline": 30
+    },
+    {
+     "id": "O038",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.11,
+     "blocked_on_baseline": 14
+    },
+    {
+     "id": "O039",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.51,
+     "blocked_on_baseline": 20
+    },
+    {
+     "id": "O040",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 7.19,
+     "blocked_on_baseline": 37
+    },
+    {
+     "id": "O041",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.69,
+     "blocked_on_baseline": 32
+    },
+    {
+     "id": "O042",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 7.28,
+     "blocked_on_baseline": 25
+    },
+    {
+     "id": "O043",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 3.5,
      "blocked_on_baseline": 22
     },
     {
-     "id": "O19",
+     "id": "O044",
      "facility": null,
      "reachable": false,
      "baseline_drivable": false,
      "time_min": null,
-     "baseline_time_min": 5.24,
-     "blocked_on_baseline": 42
+     "baseline_time_min": 5.06,
+     "blocked_on_baseline": 32
     },
     {
-     "id": "O20",
+     "id": "O045",
      "facility": null,
      "reachable": false,
      "baseline_drivable": false,
      "time_min": null,
-     "baseline_time_min": 7.85,
-     "blocked_on_baseline": 56
+     "baseline_time_min": 10.76,
+     "blocked_on_baseline": 78
+    },
+    {
+     "id": "O046",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 2.38,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O047",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 6.47,
+     "blocked_on_baseline": 43
+    },
+    {
+     "id": "O048",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.86,
+     "blocked_on_baseline": 40
+    },
+    {
+     "id": "O049",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 5.1,
+     "blocked_on_baseline": 34
+    },
+    {
+     "id": "O050",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.9,
+     "blocked_on_baseline": 22
+    },
+    {
+     "id": "O051",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 6.73,
+     "blocked_on_baseline": 48
+    },
+    {
+     "id": "O052",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 7.87,
+     "blocked_on_baseline": 41
+    },
+    {
+     "id": "O053",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 6.36,
+     "blocked_on_baseline": 18
+    },
+    {
+     "id": "O054",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 6.57,
+     "blocked_on_baseline": 29
+    },
+    {
+     "id": "O055",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 0.57,
+     "blocked_on_baseline": 4
+    },
+    {
+     "id": "O056",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 9.97,
+     "blocked_on_baseline": 39
+    },
+    {
+     "id": "O057",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.29,
+     "blocked_on_baseline": 16
+    },
+    {
+     "id": "O058",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.22,
+     "blocked_on_baseline": 30
+    },
+    {
+     "id": "O059",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.74,
+     "blocked_on_baseline": 22
+    },
+    {
+     "id": "O060",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 10.63,
+     "blocked_on_baseline": 46
+    },
+    {
+     "id": "O061",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 5.2,
+     "blocked_on_baseline": 21
+    },
+    {
+     "id": "O062",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.26,
+     "blocked_on_baseline": 21
+    },
+    {
+     "id": "O063",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 5.13,
+     "blocked_on_baseline": 33
+    },
+    {
+     "id": "O064",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 10.13,
+     "blocked_on_baseline": 41
+    },
+    {
+     "id": "O065",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 1.91,
+     "blocked_on_baseline": 7
+    },
+    {
+     "id": "O066",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.23,
+     "blocked_on_baseline": 27
+    },
+    {
+     "id": "O067",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 1.95,
+     "blocked_on_baseline": 12
+    },
+    {
+     "id": "O068",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 9.68,
+     "blocked_on_baseline": 66
+    },
+    {
+     "id": "O069",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 11.33,
+     "blocked_on_baseline": 47
+    },
+    {
+     "id": "O070",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.93,
+     "blocked_on_baseline": 35
+    },
+    {
+     "id": "O071",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 2.35,
+     "blocked_on_baseline": 5
+    },
+    {
+     "id": "O072",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 5.21,
+     "blocked_on_baseline": 19
+    },
+    {
+     "id": "O073",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 5.3,
+     "blocked_on_baseline": 19
+    },
+    {
+     "id": "O074",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 5.57,
+     "blocked_on_baseline": 25
+    },
+    {
+     "id": "O075",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 7.69,
+     "blocked_on_baseline": 46
+    },
+    {
+     "id": "O076",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 8.46,
+     "blocked_on_baseline": 80
+    },
+    {
+     "id": "O077",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 8.51,
+     "blocked_on_baseline": 80
+    },
+    {
+     "id": "O078",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 7.79,
+     "blocked_on_baseline": 25
+    },
+    {
+     "id": "O079",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 5.46,
+     "blocked_on_baseline": 20
+    },
+    {
+     "id": "O080",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 5.75,
+     "blocked_on_baseline": 39
+    },
+    {
+     "id": "O081",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 7.58,
+     "blocked_on_baseline": 43
+    },
+    {
+     "id": "O082",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 2.68,
+     "blocked_on_baseline": 12
+    },
+    {
+     "id": "O083",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 5.17,
+     "blocked_on_baseline": 25
+    },
+    {
+     "id": "O084",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 7.61,
+     "blocked_on_baseline": 37
+    },
+    {
+     "id": "O085",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 2.86,
+     "blocked_on_baseline": 13
+    },
+    {
+     "id": "O086",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 1.5,
+     "blocked_on_baseline": 7
+    },
+    {
+     "id": "O087",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 1.84,
+     "blocked_on_baseline": 10
+    },
+    {
+     "id": "O088",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.48,
+     "blocked_on_baseline": 33
+    },
+    {
+     "id": "O089",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 7.04,
+     "blocked_on_baseline": 29
+    },
+    {
+     "id": "O090",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 6.31,
+     "blocked_on_baseline": 33
+    },
+    {
+     "id": "O091",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 10.57,
+     "blocked_on_baseline": 41
+    },
+    {
+     "id": "O092",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.21,
+     "blocked_on_baseline": 34
+    },
+    {
+     "id": "O093",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 3.67,
+     "blocked_on_baseline": 27
+    },
+    {
+     "id": "O094",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 6.54,
+     "blocked_on_baseline": 45
+    },
+    {
+     "id": "O095",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 8.95,
+     "blocked_on_baseline": 64
+    },
+    {
+     "id": "O096",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 1.79,
+     "blocked_on_baseline": 9
+    },
+    {
+     "id": "O097",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 1.3,
+     "blocked_on_baseline": 4
+    },
+    {
+     "id": "O098",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 1.81,
+     "blocked_on_baseline": 10
+    },
+    {
+     "id": "O099",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 10.84,
+     "blocked_on_baseline": 72
+    },
+    {
+     "id": "O100",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.24,
+     "blocked_on_baseline": 23
+    },
+    {
+     "id": "O101",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 2.21,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O102",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 2.89,
+     "blocked_on_baseline": 18
+    },
+    {
+     "id": "O103",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 6.15,
+     "blocked_on_baseline": 57
+    },
+    {
+     "id": "O104",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 3.95,
+     "blocked_on_baseline": 33
+    },
+    {
+     "id": "O105",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 1.46,
+     "blocked_on_baseline": 13
+    },
+    {
+     "id": "O106",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.39,
+     "blocked_on_baseline": 27
+    },
+    {
+     "id": "O107",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 3.87,
+     "blocked_on_baseline": 34
+    },
+    {
+     "id": "O108",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 6.06,
+     "blocked_on_baseline": 60
+    },
+    {
+     "id": "O109",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 2.3,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O110",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 3.92,
+     "blocked_on_baseline": 31
+    },
+    {
+     "id": "O111",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 2.68,
+     "blocked_on_baseline": 26
+    },
+    {
+     "id": "O112",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 3.83,
+     "blocked_on_baseline": 26
+    },
+    {
+     "id": "O113",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 8.16,
+     "blocked_on_baseline": 57
+    },
+    {
+     "id": "O114",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.02,
+     "blocked_on_baseline": 27
+    },
+    {
+     "id": "O115",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 7.98,
+     "blocked_on_baseline": 25
+    },
+    {
+     "id": "O116",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 5.2,
+     "blocked_on_baseline": 16
+    },
+    {
+     "id": "O117",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 3.1,
+     "blocked_on_baseline": 19
+    },
+    {
+     "id": "O118",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 6.71,
+     "blocked_on_baseline": 45
+    },
+    {
+     "id": "O119",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.21,
+     "blocked_on_baseline": 19
+    },
+    {
+     "id": "O120",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 8.24,
+     "blocked_on_baseline": 25
     }
    ],
    "robustness": null
   },
   "mild": {
-   "n_origins": 20,
+   "n_origins": 120,
    "m1_time_increase_min": {
-    "mean": 0.73,
-    "median": 0.4,
-    "max": 3.51,
-    "n": 19
+    "mean": 0.76,
+    "median": 0.28,
+    "max": 4.53,
+    "n": 115
    },
-   "m2_false_route_rate": 0.75,
-   "m2_flood_aware_route_share": 0.95,
-   "m3_reach_any": 0.95,
+   "m2_false_route_rate": 0.6,
+   "m2_flood_aware_route_share": 0.958,
+   "m3_reach_any": 0.958,
    "m3_reach_by_facility": {
-    "F01": 0.95,
-    "F02": 0.95,
-    "F03": 0.95
+    "F01": 0.958,
+    "F02": 0.958,
+    "F03": 0.958
    },
-   "m4_coverage_flood_aware": 0.96,
-   "m4_coverage_conventional": 0.257,
-   "m4_coverage_difference": 0.703,
+   "m4_coverage_flood_aware": 0.968,
+   "m4_coverage_conventional": 0.338,
+   "m4_coverage_difference": 0.63,
    "coverage_threshold_min": 30.0,
+   "confidence_interval": {
+    "resamples": 300,
+    "percentiles": [
+     0.1,
+     0.9
+    ],
+    "m1_time_increase_min": [
+     0.73,
+     0.97
+    ],
+    "m3_reach_any": [
+     0.95,
+     0.983
+    ],
+    "m4_coverage_flood_aware": [
+     0.95,
+     0.983
+    ]
+   },
    "share_of_reports": 0.08,
    "edge_classes": {
     "passable": 27714,
@@ -373,184 +1808,1084 @@
    },
    "origins": [
     {
-     "id": "O01",
-     "facility": "F01",
-     "reachable": true,
-     "baseline_drivable": true,
-     "time_min": 7.17,
-     "baseline_time_min": 6.21,
-     "blocked_on_baseline": 0
-    },
-    {
-     "id": "O02",
+     "id": "O001",
      "facility": "F02",
      "reachable": true,
      "baseline_drivable": false,
-     "time_min": 5.76,
-     "baseline_time_min": 5.13,
+     "time_min": 9.73,
+     "baseline_time_min": 8.74,
+     "blocked_on_baseline": 5
+    },
+    {
+     "id": "O002",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 4.97,
+     "baseline_time_min": 4.88,
      "blocked_on_baseline": 1
     },
     {
-     "id": "O03",
-     "facility": "F03",
+     "id": "O003",
+     "facility": "F01",
      "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 5.35,
-     "baseline_time_min": 5.15,
-     "blocked_on_baseline": 5
+     "baseline_drivable": true,
+     "time_min": 4.85,
+     "baseline_time_min": 3.85,
+     "blocked_on_baseline": 0
     },
     {
-     "id": "O04",
+     "id": "O004",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 4.59,
+     "baseline_time_min": 4.59,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O005",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 2.69,
+     "baseline_time_min": 2.69,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O006",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 7.04,
+     "baseline_time_min": 7.04,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O007",
      "facility": "F01",
      "reachable": true,
      "baseline_drivable": false,
-     "time_min": 3.11,
-     "baseline_time_min": 2.95,
-     "blocked_on_baseline": 5
+     "time_min": 3.84,
+     "baseline_time_min": 2.23,
+     "blocked_on_baseline": 3
     },
     {
-     "id": "O05",
+     "id": "O008",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 6.48,
+     "baseline_time_min": 6.48,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O009",
      "facility": "F02",
      "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 3.11,
+     "baseline_time_min": 2.84,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O010",
+     "facility": "F01",
+     "reachable": true,
      "baseline_drivable": false,
-     "time_min": 5.71,
-     "baseline_time_min": 5.57,
+     "time_min": 4.65,
+     "baseline_time_min": 3.98,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O011",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 2.83,
+     "baseline_time_min": 2.75,
      "blocked_on_baseline": 2
     },
     {
-     "id": "O06",
+     "id": "O012",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 12.78,
+     "baseline_time_min": 11.77,
+     "blocked_on_baseline": 5
+    },
+    {
+     "id": "O013",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 1.88,
+     "baseline_time_min": 1.88,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O014",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.62,
+     "baseline_time_min": 4.61,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O015",
      "facility": "F01",
      "reachable": true,
      "baseline_drivable": false,
+     "time_min": 12.08,
+     "baseline_time_min": 8.3,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O016",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 4.02,
+     "baseline_time_min": 3.92,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O017",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.31,
+     "baseline_time_min": 4.87,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O018",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 7.83,
+     "baseline_time_min": 6.87,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O019",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 3.93,
+     "baseline_time_min": 3.93,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O020",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 1.71,
+     "baseline_time_min": 1.71,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O021",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": true,
      "time_min": 3.03,
-     "baseline_time_min": 2.63,
-     "blocked_on_baseline": 10
-    },
-    {
-     "id": "O07",
-     "facility": "F02",
-     "reachable": true,
-     "baseline_drivable": true,
-     "time_min": 6.11,
-     "baseline_time_min": 6.11,
+     "baseline_time_min": 3.03,
      "blocked_on_baseline": 0
     },
     {
-     "id": "O08",
+     "id": "O022",
      "facility": "F01",
      "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 4.23,
-     "baseline_time_min": 3.19,
-     "blocked_on_baseline": 10
-    },
-    {
-     "id": "O09",
-     "facility": "F02",
-     "reachable": true,
      "baseline_drivable": true,
-     "time_min": 0.8,
-     "baseline_time_min": 0.8,
+     "time_min": 1.1,
+     "baseline_time_min": 1.1,
      "blocked_on_baseline": 0
     },
     {
-     "id": "O10",
+     "id": "O023",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 3.16,
+     "baseline_time_min": 3.16,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O024",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 9.49,
+     "baseline_time_min": 9.49,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O025",
      "facility": "F01",
      "reachable": true,
      "baseline_drivable": false,
-     "time_min": 12.27,
-     "baseline_time_min": 8.76,
-     "blocked_on_baseline": 1
+     "time_min": 3.81,
+     "baseline_time_min": 3.36,
+     "blocked_on_baseline": 6
     },
     {
-     "id": "O11",
-     "facility": "F02",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 7.3,
-     "baseline_time_min": 6.34,
-     "blocked_on_baseline": 1
-    },
-    {
-     "id": "O12",
-     "facility": "F01",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 3.65,
-     "baseline_time_min": 1.76,
-     "blocked_on_baseline": 8
-    },
-    {
-     "id": "O13",
+     "id": "O026",
      "facility": "F03",
      "reachable": true,
      "baseline_drivable": false,
-     "time_min": 11.45,
-     "baseline_time_min": 10.07,
-     "blocked_on_baseline": 3
+     "time_min": 9.35,
+     "baseline_time_min": 7.2,
+     "blocked_on_baseline": 4
     },
     {
-     "id": "O14",
+     "id": "O027",
      "facility": "F02",
      "reachable": true,
      "baseline_drivable": true,
-     "time_min": 1.2,
-     "baseline_time_min": 1.2,
+     "time_min": 4.43,
+     "baseline_time_min": 4.16,
      "blocked_on_baseline": 0
     },
     {
-     "id": "O15",
+     "id": "O028",
      "facility": "F03",
      "reachable": true,
      "baseline_drivable": false,
-     "time_min": 10.98,
-     "baseline_time_min": 10.88,
-     "blocked_on_baseline": 3
+     "time_min": 7.69,
+     "baseline_time_min": 6.29,
+     "blocked_on_baseline": 1
     },
     {
-     "id": "O16",
-     "facility": "F01",
-     "reachable": true,
-     "baseline_drivable": true,
-     "time_min": 2.56,
-     "baseline_time_min": 2.56,
-     "blocked_on_baseline": 0
-    },
-    {
-     "id": "O17",
+     "id": "O029",
      "facility": null,
      "reachable": false,
      "baseline_drivable": false,
      "time_min": null,
-     "baseline_time_min": 14.24,
+     "baseline_time_min": 11.95,
      "blocked_on_baseline": 6
     },
     {
-     "id": "O18",
-     "facility": "F01",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 4.71,
-     "baseline_time_min": 4.59,
-     "blocked_on_baseline": 2
-    },
-    {
-     "id": "O19",
-     "facility": "F01",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 5.78,
-     "baseline_time_min": 5.24,
-     "blocked_on_baseline": 1
-    },
-    {
-     "id": "O20",
+     "id": "O030",
      "facility": "F02",
      "reachable": true,
      "baseline_drivable": false,
-     "time_min": 9.7,
-     "baseline_time_min": 7.85,
+     "time_min": 5.15,
+     "baseline_time_min": 4.87,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O031",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 4.69,
+     "baseline_time_min": 4.6,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O032",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 11.21,
+     "baseline_time_min": 8.06,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O033",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 4.91,
+     "baseline_time_min": 4.63,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O034",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 7.22,
+     "baseline_time_min": 4.46,
+     "blocked_on_baseline": 12
+    },
+    {
+     "id": "O035",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 4.07,
+     "baseline_time_min": 3.8,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O036",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 3.51,
+     "baseline_time_min": 3.51,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O037",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.24,
+     "baseline_time_min": 4.44,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O038",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 4.37,
+     "baseline_time_min": 4.11,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O039",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.1,
+     "baseline_time_min": 4.51,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O040",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 7.75,
+     "baseline_time_min": 7.19,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O041",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.25,
+     "baseline_time_min": 4.69,
      "blocked_on_baseline": 5
+    },
+    {
+     "id": "O042",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 8.24,
+     "baseline_time_min": 7.28,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O043",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 4.62,
+     "baseline_time_min": 3.5,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O044",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.34,
+     "baseline_time_min": 5.06,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O045",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 11.08,
+     "baseline_time_min": 10.76,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O046",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 2.38,
+     "baseline_time_min": 2.38,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O047",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 6.47,
+     "blocked_on_baseline": 5
+    },
+    {
+     "id": "O048",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 8.31,
+     "baseline_time_min": 4.86,
+     "blocked_on_baseline": 4
+    },
+    {
+     "id": "O049",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.39,
+     "baseline_time_min": 5.1,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O050",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.41,
+     "baseline_time_min": 4.9,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O051",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 7.02,
+     "baseline_time_min": 6.73,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O052",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 11.68,
+     "baseline_time_min": 7.87,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O053",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 6.63,
+     "baseline_time_min": 6.36,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O054",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 7.4,
+     "baseline_time_min": 6.57,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O055",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 0.57,
+     "baseline_time_min": 0.57,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O056",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 13.08,
+     "baseline_time_min": 9.97,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O057",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 4.55,
+     "baseline_time_min": 4.29,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O058",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 4.32,
+     "baseline_time_min": 4.22,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O059",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.26,
+     "baseline_time_min": 4.74,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O060",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 13.5,
+     "baseline_time_min": 10.63,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O061",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 6.14,
+     "baseline_time_min": 5.2,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O062",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 4.52,
+     "baseline_time_min": 4.26,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O063",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.61,
+     "baseline_time_min": 5.13,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O064",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 12.11,
+     "baseline_time_min": 10.13,
+     "blocked_on_baseline": 5
+    },
+    {
+     "id": "O065",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 1.91,
+     "baseline_time_min": 1.91,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O066",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.62,
+     "baseline_time_min": 4.23,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O067",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 4.23,
+     "baseline_time_min": 1.95,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O068",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 9.96,
+     "baseline_time_min": 9.68,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O069",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 11.33,
+     "baseline_time_min": 11.33,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O070",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.25,
+     "baseline_time_min": 4.93,
+     "blocked_on_baseline": 5
+    },
+    {
+     "id": "O071",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 2.35,
+     "baseline_time_min": 2.35,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O072",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.37,
+     "baseline_time_min": 5.21,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O073",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 5.3,
+     "baseline_time_min": 5.3,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O074",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 6.99,
+     "baseline_time_min": 5.57,
+     "blocked_on_baseline": 4
+    },
+    {
+     "id": "O075",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 10.09,
+     "baseline_time_min": 7.69,
+     "blocked_on_baseline": 4
+    },
+    {
+     "id": "O076",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 10.42,
+     "baseline_time_min": 8.46,
+     "blocked_on_baseline": 4
+    },
+    {
+     "id": "O077",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 10.42,
+     "baseline_time_min": 8.51,
+     "blocked_on_baseline": 4
+    },
+    {
+     "id": "O078",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 8.98,
+     "baseline_time_min": 7.79,
+     "blocked_on_baseline": 4
+    },
+    {
+     "id": "O079",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 6.42,
+     "baseline_time_min": 5.46,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O080",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 6.01,
+     "baseline_time_min": 5.75,
+     "blocked_on_baseline": 15
+    },
+    {
+     "id": "O081",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 12.11,
+     "baseline_time_min": 7.58,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O082",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 2.99,
+     "baseline_time_min": 2.68,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O083",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 5.9,
+     "baseline_time_min": 5.17,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O084",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 10.47,
+     "baseline_time_min": 7.61,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O085",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 2.86,
+     "baseline_time_min": 2.86,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O086",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 1.5,
+     "baseline_time_min": 1.5,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O087",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 1.84,
+     "baseline_time_min": 1.84,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O088",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 4.48,
+     "baseline_time_min": 4.48,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O089",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 8.01,
+     "baseline_time_min": 7.04,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O090",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 6.35,
+     "baseline_time_min": 6.31,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O091",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 11.84,
+     "baseline_time_min": 10.57,
+     "blocked_on_baseline": 5
+    },
+    {
+     "id": "O092",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 4.21,
+     "baseline_time_min": 4.21,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O093",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 4.63,
+     "baseline_time_min": 3.67,
+     "blocked_on_baseline": 10
+    },
+    {
+     "id": "O094",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 7.53,
+     "baseline_time_min": 6.54,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O095",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 9.24,
+     "baseline_time_min": 8.95,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O096",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 1.79,
+     "baseline_time_min": 1.79,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O097",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 1.3,
+     "baseline_time_min": 1.3,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O098",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 1.81,
+     "baseline_time_min": 1.81,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O099",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 12.54,
+     "baseline_time_min": 10.84,
+     "blocked_on_baseline": 14
+    },
+    {
+     "id": "O100",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.24,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O101",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 2.21,
+     "baseline_time_min": 2.21,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O102",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 2.89,
+     "baseline_time_min": 2.89,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O103",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 9.16,
+     "baseline_time_min": 6.15,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O104",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 3.95,
+     "baseline_time_min": 3.95,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O105",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 1.46,
+     "baseline_time_min": 1.46,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O106",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.73,
+     "baseline_time_min": 4.39,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O107",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 4.53,
+     "baseline_time_min": 3.87,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O108",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 8.93,
+     "baseline_time_min": 6.06,
+     "blocked_on_baseline": 4
+    },
+    {
+     "id": "O109",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 2.3,
+     "baseline_time_min": 2.3,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O110",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 4.88,
+     "baseline_time_min": 3.92,
+     "blocked_on_baseline": 10
+    },
+    {
+     "id": "O111",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 2.68,
+     "baseline_time_min": 2.68,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O112",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 4.23,
+     "baseline_time_min": 3.83,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O113",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 8.16,
+     "blocked_on_baseline": 8
+    },
+    {
+     "id": "O114",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 4.47,
+     "baseline_time_min": 4.02,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O115",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 7.98,
+     "baseline_time_min": 7.98,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O116",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 5.2,
+     "baseline_time_min": 5.2,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O117",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 3.1,
+     "baseline_time_min": 3.1,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O118",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 6.71,
+     "blocked_on_baseline": 9
+    },
+    {
+     "id": "O119",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 4.72,
+     "baseline_time_min": 4.21,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O120",
+     "facility": "F03",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 8.24,
+     "baseline_time_min": 8.24,
+     "blocked_on_baseline": 0
     }
    ],
    "robustness": {
@@ -559,52 +2894,171 @@
      0.05,
      0.3
     ],
-    "overall": 0.642,
-    "share_changed_at_least_once": 0.9,
+    "overall": 0.478,
+    "share_changed_at_least_once": 0.967,
     "per_origin": [
-     0.92,
      0.4,
+     0.4,
+     0.38,
+     0.94,
      0.36,
+     0.36,
+     0.88,
      0.94,
      0.4,
      0.9,
-     0.4,
-     0.9,
+     0.88,
+     0.36,
+     0.36,
      0.4,
      0.8,
      0.4,
+     0.36,
+     0.4,
+     0.36,
+     0.36,
+     0.36,
+     0.94,
+     0.88,
+     0.14,
      0.9,
      0.36,
      0.4,
      0.36,
      1.0,
-     1.0,
-     0.66,
+     0.4,
+     0.4,
+     0.36,
+     0.4,
+     0.24,
+     0.4,
+     0.36,
+     0.4,
+     0.4,
+     0.4,
+     0.4,
+     0.36,
+     0.4,
+     0.4,
+     0.4,
+     0.36,
+     0.36,
+     0.98,
+     0.36,
+     0.4,
+     0.4,
+     0.4,
+     0.48,
+     0.4,
+     0.4,
+     0.4,
+     0.22,
+     0.4,
+     0.4,
+     0.4,
+     0.74,
+     0.4,
+     0.4,
+     0.36,
+     0.36,
+     0.36,
+     0.92,
+     0.36,
+     0.4,
+     0.36,
+     0.36,
+     0.4,
+     0.4,
+     0.4,
+     0.4,
+     0.12,
+     0.14,
+     0.34,
+     0.4,
+     0.4,
+     0.4,
+     0.04,
+     0.4,
+     0.4,
+     0.38,
+     0.4,
+     0.36,
+     0.36,
      0.94,
-     0.4
+     0.4,
+     0.4,
+     0.36,
+     0.94,
+     0.9,
+     0.36,
+     0.4,
+     0.22,
+     0.4,
+     0.36,
+     0.36,
+     1.0,
+     0.36,
+     0.4,
+     0.36,
+     0.94,
+     0.94,
+     1.0,
+     0.9,
+     0.36,
+     0.36,
+     0.9,
+     0.94,
+     0.36,
+     0.92,
+     0.36,
+     0.14,
+     0.4,
+     0.36,
+     1.0,
+     0.4,
+     0.14
     ]
    }
   },
   "moderate": {
-   "n_origins": 20,
+   "n_origins": 120,
    "m1_time_increase_min": {
-    "mean": 4.01,
-    "median": 2.4,
-    "max": 17.11,
-    "n": 19
+    "mean": 5.86,
+    "median": 2.19,
+    "max": 21.33,
+    "n": 104
    },
-   "m2_false_route_rate": 0.85,
-   "m2_flood_aware_route_share": 0.95,
-   "m3_reach_any": 0.95,
+   "m2_false_route_rate": 0.867,
+   "m2_flood_aware_route_share": 0.867,
+   "m3_reach_any": 0.867,
    "m3_reach_by_facility": {
-    "F01": 0.95,
-    "F02": 0.95,
+    "F01": 0.867,
+    "F02": 0.867,
     "F03": 0.0
    },
-   "m4_coverage_flood_aware": 0.96,
-   "m4_coverage_conventional": 0.179,
-   "m4_coverage_difference": 0.781,
+   "m4_coverage_flood_aware": 0.86,
+   "m4_coverage_conventional": 0.121,
+   "m4_coverage_difference": 0.739,
    "coverage_threshold_min": 30.0,
+   "confidence_interval": {
+    "resamples": 300,
+    "percentiles": [
+     0.1,
+     0.9
+    ],
+    "m1_time_increase_min": [
+     5.01,
+     6.9
+    ],
+    "m3_reach_any": [
+     0.817,
+     0.9
+    ],
+    "m4_coverage_flood_aware": [
+     0.817,
+     0.9
+    ]
+   },
    "share_of_reports": 0.16,
    "edge_classes": {
     "passable": 24909,
@@ -613,184 +3067,1084 @@
    },
    "origins": [
     {
-     "id": "O01",
-     "facility": "F01",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 9.26,
-     "baseline_time_min": 6.21,
-     "blocked_on_baseline": 2
-    },
-    {
-     "id": "O02",
+     "id": "O001",
      "facility": "F02",
      "reachable": true,
      "baseline_drivable": false,
-     "time_min": 7.03,
-     "baseline_time_min": 5.13,
+     "time_min": 11.55,
+     "baseline_time_min": 8.74,
+     "blocked_on_baseline": 17
+    },
+    {
+     "id": "O002",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 4.97,
+     "baseline_time_min": 4.88,
      "blocked_on_baseline": 1
     },
     {
-     "id": "O03",
-     "facility": "F02",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 20.29,
-     "baseline_time_min": 5.15,
-     "blocked_on_baseline": 11
-    },
-    {
-     "id": "O04",
-     "facility": "F01",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 5.17,
-     "baseline_time_min": 2.95,
-     "blocked_on_baseline": 6
-    },
-    {
-     "id": "O05",
-     "facility": "F02",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 5.83,
-     "baseline_time_min": 5.57,
-     "blocked_on_baseline": 4
-    },
-    {
-     "id": "O06",
-     "facility": "F01",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 3.95,
-     "baseline_time_min": 2.63,
-     "blocked_on_baseline": 13
-    },
-    {
-     "id": "O07",
-     "facility": "F02",
-     "reachable": true,
-     "baseline_drivable": true,
-     "time_min": 6.11,
-     "baseline_time_min": 6.11,
-     "blocked_on_baseline": 0
-    },
-    {
-     "id": "O08",
-     "facility": "F01",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 5.44,
-     "baseline_time_min": 3.19,
-     "blocked_on_baseline": 13
-    },
-    {
-     "id": "O09",
-     "facility": "F02",
-     "reachable": true,
-     "baseline_drivable": true,
-     "time_min": 0.8,
-     "baseline_time_min": 0.8,
-     "blocked_on_baseline": 0
-    },
-    {
-     "id": "O10",
-     "facility": "F02",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 17.86,
-     "baseline_time_min": 8.76,
-     "blocked_on_baseline": 1
-    },
-    {
-     "id": "O11",
-     "facility": "F02",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 8.89,
-     "baseline_time_min": 6.34,
-     "blocked_on_baseline": 1
-    },
-    {
-     "id": "O12",
-     "facility": "F01",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 4.86,
-     "baseline_time_min": 1.76,
-     "blocked_on_baseline": 9
-    },
-    {
-     "id": "O13",
-     "facility": "F02",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 17.52,
-     "baseline_time_min": 10.07,
-     "blocked_on_baseline": 21
-    },
-    {
-     "id": "O14",
-     "facility": "F02",
-     "reachable": true,
-     "baseline_drivable": true,
-     "time_min": 1.2,
-     "baseline_time_min": 1.2,
-     "blocked_on_baseline": 0
-    },
-    {
-     "id": "O15",
-     "facility": "F02",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 27.99,
-     "baseline_time_min": 10.88,
-     "blocked_on_baseline": 21
-    },
-    {
-     "id": "O16",
-     "facility": "F01",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 7.19,
-     "baseline_time_min": 2.56,
-     "blocked_on_baseline": 1
-    },
-    {
-     "id": "O17",
+     "id": "O003",
      "facility": null,
      "reachable": false,
      "baseline_drivable": false,
      "time_min": null,
-     "baseline_time_min": 14.24,
-     "blocked_on_baseline": 8
+     "baseline_time_min": 3.85,
+     "blocked_on_baseline": 3
     },
     {
-     "id": "O18",
+     "id": "O004",
      "facility": "F01",
      "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 4.71,
+     "baseline_drivable": true,
+     "time_min": 4.59,
      "baseline_time_min": 4.59,
-     "blocked_on_baseline": 3
+     "blocked_on_baseline": 0
     },
     {
-     "id": "O19",
-     "facility": "F01",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 7.64,
-     "baseline_time_min": 5.24,
-     "blocked_on_baseline": 3
-    },
-    {
-     "id": "O20",
+     "id": "O005",
      "facility": "F02",
      "reachable": true,
      "baseline_drivable": false,
-     "time_min": 11.4,
-     "baseline_time_min": 7.85,
+     "time_min": 22.99,
+     "baseline_time_min": 2.69,
+     "blocked_on_baseline": 7
+    },
+    {
+     "id": "O006",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 20.83,
+     "baseline_time_min": 7.04,
+     "blocked_on_baseline": 16
+    },
+    {
+     "id": "O007",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.96,
+     "baseline_time_min": 2.23,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O008",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 6.48,
+     "baseline_time_min": 6.48,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O009",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 3.11,
+     "baseline_time_min": 2.84,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O010",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.85,
+     "baseline_time_min": 3.98,
+     "blocked_on_baseline": 10
+    },
+    {
+     "id": "O011",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.45,
+     "baseline_time_min": 2.75,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O012",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 29.68,
+     "baseline_time_min": 11.77,
+     "blocked_on_baseline": 8
+    },
+    {
+     "id": "O013",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 23.21,
+     "baseline_time_min": 1.88,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O014",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.71,
+     "baseline_time_min": 4.61,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O015",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 17.89,
+     "baseline_time_min": 8.3,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O016",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 4.02,
+     "baseline_time_min": 3.92,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O017",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 19.19,
+     "baseline_time_min": 4.87,
+     "blocked_on_baseline": 10
+    },
+    {
+     "id": "O018",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 11.16,
+     "baseline_time_min": 6.87,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O019",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 3.93,
+     "blocked_on_baseline": 5
+    },
+    {
+     "id": "O020",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 23.04,
+     "baseline_time_min": 1.71,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O021",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 19.49,
+     "baseline_time_min": 3.03,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O022",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 4.38,
+     "baseline_time_min": 1.1,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O023",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 3.16,
+     "baseline_time_min": 3.16,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O024",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 9.49,
+     "blocked_on_baseline": 4
+    },
+    {
+     "id": "O025",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.01,
+     "baseline_time_min": 3.36,
+     "blocked_on_baseline": 10
+    },
+    {
+     "id": "O026",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 13.26,
+     "baseline_time_min": 7.2,
+     "blocked_on_baseline": 16
+    },
+    {
+     "id": "O027",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 4.43,
+     "baseline_time_min": 4.16,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O028",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 19.97,
+     "baseline_time_min": 6.29,
+     "blocked_on_baseline": 9
+    },
+    {
+     "id": "O029",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 11.95,
+     "blocked_on_baseline": 8
+    },
+    {
+     "id": "O030",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.98,
+     "baseline_time_min": 4.87,
+     "blocked_on_baseline": 5
+    },
+    {
+     "id": "O031",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.55,
+     "baseline_time_min": 4.6,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O032",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 8.06,
+     "blocked_on_baseline": 16
+    },
+    {
+     "id": "O033",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.74,
+     "baseline_time_min": 4.63,
+     "blocked_on_baseline": 5
+    },
+    {
+     "id": "O034",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.46,
+     "blocked_on_baseline": 17
+    },
+    {
+     "id": "O035",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 4.07,
+     "baseline_time_min": 3.8,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O036",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 20.94,
+     "baseline_time_min": 3.51,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O037",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.24,
+     "baseline_time_min": 4.44,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O038",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 4.37,
+     "baseline_time_min": 4.11,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O039",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.1,
+     "baseline_time_min": 4.51,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O040",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 9.31,
+     "baseline_time_min": 7.19,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O041",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 20.33,
+     "baseline_time_min": 4.69,
+     "blocked_on_baseline": 11
+    },
+    {
+     "id": "O042",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 10.87,
+     "baseline_time_min": 7.28,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O043",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.41,
+     "baseline_time_min": 3.5,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O044",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.72,
+     "baseline_time_min": 5.06,
+     "blocked_on_baseline": 5
+    },
+    {
+     "id": "O045",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 14.44,
+     "baseline_time_min": 10.76,
+     "blocked_on_baseline": 19
+    },
+    {
+     "id": "O046",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 20.79,
+     "baseline_time_min": 2.38,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O047",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 6.47,
+     "blocked_on_baseline": 15
+    },
+    {
+     "id": "O048",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 14.35,
+     "baseline_time_min": 4.86,
+     "blocked_on_baseline": 15
+    },
+    {
+     "id": "O049",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.81,
+     "baseline_time_min": 5.1,
+     "blocked_on_baseline": 5
+    },
+    {
+     "id": "O050",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.41,
+     "baseline_time_min": 4.9,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O051",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 6.73,
+     "blocked_on_baseline": 7
+    },
+    {
+     "id": "O052",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 17.5,
+     "baseline_time_min": 7.87,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O053",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 6.63,
+     "baseline_time_min": 6.36,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O054",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 8.68,
+     "baseline_time_min": 6.57,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O055",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 1.08,
+     "baseline_time_min": 0.57,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O056",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 9.97,
+     "blocked_on_baseline": 8
+    },
+    {
+     "id": "O057",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 4.55,
+     "baseline_time_min": 4.29,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O058",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 4.44,
+     "baseline_time_min": 4.22,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O059",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.26,
+     "baseline_time_min": 4.74,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O060",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 13.57,
+     "baseline_time_min": 10.63,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O061",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 7.41,
+     "baseline_time_min": 5.2,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O062",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 4.52,
+     "baseline_time_min": 4.26,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O063",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 15.44,
+     "baseline_time_min": 5.13,
+     "blocked_on_baseline": 5
+    },
+    {
+     "id": "O064",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 29.01,
+     "baseline_time_min": 10.13,
+     "blocked_on_baseline": 7
+    },
+    {
+     "id": "O065",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 21.05,
+     "baseline_time_min": 1.91,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O066",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 8.32,
+     "baseline_time_min": 4.23,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O067",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 1.95,
+     "blocked_on_baseline": 4
+    },
+    {
+     "id": "O068",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 12.29,
+     "baseline_time_min": 9.68,
+     "blocked_on_baseline": 7
+    },
+    {
+     "id": "O069",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 28.37,
+     "baseline_time_min": 11.33,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O070",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 20.33,
+     "baseline_time_min": 4.93,
+     "blocked_on_baseline": 11
+    },
+    {
+     "id": "O071",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 2.45,
+     "baseline_time_min": 2.35,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O072",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.49,
+     "baseline_time_min": 5.21,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O073",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 5.3,
+     "baseline_time_min": 5.3,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O074",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 6.99,
+     "baseline_time_min": 5.57,
+     "blocked_on_baseline": 4
+    },
+    {
+     "id": "O075",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 12.73,
+     "baseline_time_min": 7.69,
+     "blocked_on_baseline": 10
+    },
+    {
+     "id": "O076",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 11.36,
+     "baseline_time_min": 8.46,
+     "blocked_on_baseline": 19
+    },
+    {
+     "id": "O077",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 11.25,
+     "baseline_time_min": 8.51,
+     "blocked_on_baseline": 19
+    },
+    {
+     "id": "O078",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 11.62,
+     "baseline_time_min": 7.79,
+     "blocked_on_baseline": 4
+    },
+    {
+     "id": "O079",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 8.92,
+     "baseline_time_min": 5.46,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O080",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 6.3,
+     "baseline_time_min": 5.75,
+     "blocked_on_baseline": 16
+    },
+    {
+     "id": "O081",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 14.66,
+     "baseline_time_min": 7.58,
+     "blocked_on_baseline": 9
+    },
+    {
+     "id": "O082",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 2.99,
+     "baseline_time_min": 2.68,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O083",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 7.01,
+     "baseline_time_min": 5.17,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O084",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 10.47,
+     "baseline_time_min": 7.61,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O085",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 2.86,
+     "baseline_time_min": 2.86,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O086",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 22.83,
+     "baseline_time_min": 1.5,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O087",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 22.98,
+     "baseline_time_min": 1.84,
+     "blocked_on_baseline": 4
+    },
+    {
+     "id": "O088",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 4.48,
+     "baseline_time_min": 4.48,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O089",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 9.08,
+     "baseline_time_min": 7.04,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O090",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 6.35,
+     "baseline_time_min": 6.31,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O091",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 28.74,
+     "baseline_time_min": 10.57,
+     "blocked_on_baseline": 7
+    },
+    {
+     "id": "O092",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 4.21,
+     "baseline_time_min": 4.21,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O093",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.84,
+     "baseline_time_min": 3.67,
      "blocked_on_baseline": 13
+    },
+    {
+     "id": "O094",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 22.67,
+     "baseline_time_min": 6.54,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O095",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 10.12,
+     "baseline_time_min": 8.95,
+     "blocked_on_baseline": 7
+    },
+    {
+     "id": "O096",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 1.79,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O097",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 1.64,
+     "baseline_time_min": 1.3,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O098",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 23.13,
+     "baseline_time_min": 1.81,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O099",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 14.52,
+     "baseline_time_min": 10.84,
+     "blocked_on_baseline": 16
+    },
+    {
+     "id": "O100",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.24,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O101",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 20.76,
+     "baseline_time_min": 2.21,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O102",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 2.96,
+     "baseline_time_min": 2.89,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O103",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 12.84,
+     "baseline_time_min": 6.15,
+     "blocked_on_baseline": 21
+    },
+    {
+     "id": "O104",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.37,
+     "baseline_time_min": 3.95,
+     "blocked_on_baseline": 7
+    },
+    {
+     "id": "O105",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 2.93,
+     "baseline_time_min": 1.46,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O106",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 7.59,
+     "baseline_time_min": 4.39,
+     "blocked_on_baseline": 4
+    },
+    {
+     "id": "O107",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.74,
+     "baseline_time_min": 3.87,
+     "blocked_on_baseline": 10
+    },
+    {
+     "id": "O108",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 11.98,
+     "baseline_time_min": 6.06,
+     "blocked_on_baseline": 19
+    },
+    {
+     "id": "O109",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 20.85,
+     "baseline_time_min": 2.3,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O110",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 6.08,
+     "baseline_time_min": 3.92,
+     "blocked_on_baseline": 13
+    },
+    {
+     "id": "O111",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 2.86,
+     "baseline_time_min": 2.68,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O112",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 19.43,
+     "baseline_time_min": 3.83,
+     "blocked_on_baseline": 10
+    },
+    {
+     "id": "O113",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 8.16,
+     "blocked_on_baseline": 10
+    },
+    {
+     "id": "O114",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 17.71,
+     "baseline_time_min": 4.02,
+     "blocked_on_baseline": 10
+    },
+    {
+     "id": "O115",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 7.98,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O116",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": true,
+     "time_min": 5.2,
+     "baseline_time_min": 5.2,
+     "blocked_on_baseline": 0
+    },
+    {
+     "id": "O117",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 19.7,
+     "baseline_time_min": 3.1,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O118",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 6.71,
+     "blocked_on_baseline": 11
+    },
+    {
+     "id": "O119",
+     "facility": "F02",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 4.92,
+     "baseline_time_min": 4.21,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O120",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 8.24,
+     "blocked_on_baseline": 3
     }
    ],
    "robustness": {
@@ -799,52 +4153,171 @@
      0.05,
      0.3
     ],
-    "overall": 0.56,
-    "share_changed_at_least_once": 0.9,
+    "overall": 0.414,
+    "share_changed_at_least_once": 0.967,
     "per_origin": [
-     0.92,
      0.4,
+     0.4,
+     0.62,
+     0.94,
      0.04,
+     0.04,
+     0.88,
      0.94,
      0.4,
      0.9,
-     0.4,
-     0.9,
+     0.88,
+     0.04,
+     0.04,
      0.4,
      0.12,
      0.4,
+     0.04,
+     0.4,
+     0.64,
+     0.04,
+     0.04,
+     0.94,
+     0.88,
+     0.86,
      0.9,
      0.04,
      0.4,
      0.04,
      1.0,
-     1.0,
+     0.4,
+     0.4,
+     0.6,
+     0.4,
+     0.68,
+     0.4,
+     0.04,
+     0.4,
+     0.4,
+     0.4,
+     0.4,
+     0.04,
+     0.4,
+     0.4,
+     0.4,
+     0.04,
+     0.04,
+     0.98,
+     0.04,
+     0.4,
+     0.4,
+     0.6,
+     0.12,
+     0.4,
+     0.4,
+     0.4,
      0.66,
+     0.4,
+     0.4,
+     0.4,
+     0.18,
+     0.4,
+     0.4,
+     0.04,
+     0.04,
+     0.04,
+     0.02,
+     0.64,
+     0.4,
+     0.04,
+     0.04,
+     0.4,
+     0.4,
+     0.4,
+     0.4,
+     0.12,
+     0.26,
+     0.34,
+     0.4,
+     0.4,
+     0.4,
+     0.04,
+     0.4,
+     0.4,
+     0.38,
+     0.4,
+     0.04,
+     0.04,
      0.94,
-     0.4
+     0.4,
+     0.4,
+     0.04,
+     0.94,
+     0.9,
+     0.04,
+     0.4,
+     0.78,
+     0.4,
+     0.04,
+     0.04,
+     1.0,
+     0.04,
+     0.4,
+     0.04,
+     0.94,
+     0.94,
+     1.0,
+     0.9,
+     0.04,
+     0.04,
+     0.9,
+     0.94,
+     0.04,
+     0.92,
+     0.04,
+     0.86,
+     0.4,
+     0.04,
+     1.0,
+     0.4,
+     0.86
     ]
    }
   },
   "severe": {
-   "n_origins": 20,
+   "n_origins": 120,
    "m1_time_increase_min": {
-    "mean": 11.18,
-    "median": 10.27,
-    "max": 29.49,
-    "n": 17
+    "mean": 15.66,
+    "median": 12.81,
+    "max": 34.35,
+    "n": 90
    },
    "m2_false_route_rate": 1.0,
-   "m2_flood_aware_route_share": 0.85,
-   "m3_reach_any": 0.85,
+   "m2_flood_aware_route_share": 0.75,
+   "m3_reach_any": 0.75,
    "m3_reach_by_facility": {
-    "F01": 0.85,
+    "F01": 0.75,
     "F02": 0.0,
     "F03": 0.0
    },
-   "m4_coverage_flood_aware": 0.691,
+   "m4_coverage_flood_aware": 0.535,
    "m4_coverage_conventional": 0.0,
-   "m4_coverage_difference": 0.691,
+   "m4_coverage_difference": 0.535,
    "coverage_threshold_min": 30.0,
+   "confidence_interval": {
+    "resamples": 300,
+    "percentiles": [
+     0.1,
+     0.9
+    ],
+    "m1_time_increase_min": [
+     14.79,
+     17.39
+    ],
+    "m3_reach_any": [
+     0.675,
+     0.783
+    ],
+    "m4_coverage_flood_aware": [
+     0.467,
+     0.592
+    ]
+   },
    "share_of_reports": 0.25,
    "edge_classes": {
     "passable": 22317,
@@ -853,184 +4326,1084 @@
    },
    "origins": [
     {
-     "id": "O01",
+     "id": "O001",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 8.74,
+     "blocked_on_baseline": 37
+    },
+    {
+     "id": "O002",
      "facility": "F01",
      "reachable": true,
      "baseline_drivable": false,
-     "time_min": 9.26,
-     "baseline_time_min": 6.21,
+     "time_min": 17.59,
+     "baseline_time_min": 4.88,
+     "blocked_on_baseline": 7
+    },
+    {
+     "id": "O003",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 3.85,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O004",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 6.13,
+     "baseline_time_min": 4.59,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O005",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 36.01,
+     "baseline_time_min": 2.69,
+     "blocked_on_baseline": 7
+    },
+    {
+     "id": "O006",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 33.23,
+     "baseline_time_min": 7.04,
+     "blocked_on_baseline": 20
+    },
+    {
+     "id": "O007",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 8.57,
+     "baseline_time_min": 2.23,
+     "blocked_on_baseline": 4
+    },
+    {
+     "id": "O008",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 8.02,
+     "baseline_time_min": 6.48,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O009",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 13.27,
+     "baseline_time_min": 2.84,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O010",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.85,
+     "baseline_time_min": 3.98,
+     "blocked_on_baseline": 15
+    },
+    {
+     "id": "O011",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 8.57,
+     "baseline_time_min": 2.75,
      "blocked_on_baseline": 5
     },
     {
-     "id": "O02",
-     "facility": "F01",
-     "reachable": true,
+     "id": "O012",
+     "facility": null,
+     "reachable": false,
      "baseline_drivable": false,
-     "time_min": 18.4,
-     "baseline_time_min": 5.13,
-     "blocked_on_baseline": 6
-    },
-    {
-     "id": "O03",
-     "facility": "F01",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 34.65,
-     "baseline_time_min": 5.15,
+     "time_min": null,
+     "baseline_time_min": 11.77,
      "blocked_on_baseline": 11
     },
     {
-     "id": "O04",
+     "id": "O013",
      "facility": "F01",
      "reachable": true,
      "baseline_drivable": false,
-     "time_min": 7.83,
-     "baseline_time_min": 2.95,
+     "time_min": 36.23,
+     "baseline_time_min": 1.88,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O014",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 17.08,
+     "baseline_time_min": 4.61,
+     "blocked_on_baseline": 7
+    },
+    {
+     "id": "O015",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 37.68,
+     "baseline_time_min": 8.3,
+     "blocked_on_baseline": 19
+    },
+    {
+     "id": "O016",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 15.39,
+     "baseline_time_min": 3.92,
+     "blocked_on_baseline": 5
+    },
+    {
+     "id": "O017",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 33.54,
+     "baseline_time_min": 4.87,
+     "blocked_on_baseline": 10
+    },
+    {
+     "id": "O018",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 23.25,
+     "baseline_time_min": 6.87,
      "blocked_on_baseline": 6
     },
     {
-     "id": "O05",
+     "id": "O019",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 3.93,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O020",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 36.06,
+     "baseline_time_min": 1.71,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O021",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 32.45,
+     "baseline_time_min": 3.03,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O022",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 11.75,
+     "baseline_time_min": 1.1,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O023",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 4.7,
+     "baseline_time_min": 3.16,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O024",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 9.49,
+     "blocked_on_baseline": 13
+    },
+    {
+     "id": "O025",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.01,
+     "baseline_time_min": 3.36,
+     "blocked_on_baseline": 15
+    },
+    {
+     "id": "O026",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 25.15,
+     "baseline_time_min": 7.2,
+     "blocked_on_baseline": 30
+    },
+    {
+     "id": "O027",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 12.08,
+     "baseline_time_min": 4.16,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O028",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 32.38,
+     "baseline_time_min": 6.29,
+     "blocked_on_baseline": 13
+    },
+    {
+     "id": "O029",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 11.95,
+     "blocked_on_baseline": 13
+    },
+    {
+     "id": "O030",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 17.72,
+     "baseline_time_min": 4.87,
+     "blocked_on_baseline": 12
+    },
+    {
+     "id": "O031",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.6,
+     "blocked_on_baseline": 16
+    },
+    {
+     "id": "O032",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 8.06,
+     "blocked_on_baseline": 21
+    },
+    {
+     "id": "O033",
      "facility": "F01",
      "reachable": true,
      "baseline_drivable": false,
      "time_min": 17.2,
-     "baseline_time_min": 5.57,
+     "baseline_time_min": 4.63,
      "blocked_on_baseline": 11
     },
     {
-     "id": "O06",
-     "facility": "F01",
-     "reachable": true,
+     "id": "O034",
+     "facility": null,
+     "reachable": false,
      "baseline_drivable": false,
-     "time_min": 3.95,
-     "baseline_time_min": 2.63,
-     "blocked_on_baseline": 13
+     "time_min": null,
+     "baseline_time_min": 4.46,
+     "blocked_on_baseline": 19
     },
     {
-     "id": "O07",
+     "id": "O035",
      "facility": "F01",
      "reachable": true,
      "baseline_drivable": false,
-     "time_min": 12.55,
-     "baseline_time_min": 6.11,
-     "blocked_on_baseline": 4
+     "time_min": 11.54,
+     "baseline_time_min": 3.8,
+     "blocked_on_baseline": 2
     },
     {
-     "id": "O08",
+     "id": "O036",
      "facility": "F01",
      "reachable": true,
      "baseline_drivable": false,
-     "time_min": 5.44,
-     "baseline_time_min": 3.19,
+     "time_min": 33.96,
+     "baseline_time_min": 3.51,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O037",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 18.6,
+     "baseline_time_min": 4.44,
      "blocked_on_baseline": 16
     },
     {
-     "id": "O09",
+     "id": "O038",
      "facility": "F01",
      "reachable": true,
      "baseline_drivable": false,
-     "time_min": 12.13,
-     "baseline_time_min": 0.8,
-     "blocked_on_baseline": 2
-    },
-    {
-     "id": "O10",
-     "facility": "F01",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 37.64,
-     "baseline_time_min": 8.76,
-     "blocked_on_baseline": 19
-    },
-    {
-     "id": "O11",
-     "facility": "F01",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 22.4,
-     "baseline_time_min": 6.34,
-     "blocked_on_baseline": 6
-    },
-    {
-     "id": "O12",
-     "facility": "F01",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 5.77,
-     "baseline_time_min": 1.76,
-     "blocked_on_baseline": 9
-    },
-    {
-     "id": "O13",
-     "facility": "F01",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 34.81,
-     "baseline_time_min": 10.07,
-     "blocked_on_baseline": 27
-    },
-    {
-     "id": "O14",
-     "facility": "F01",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 11.47,
-     "baseline_time_min": 1.2,
-     "blocked_on_baseline": 2
-    },
-    {
-     "id": "O15",
-     "facility": null,
-     "reachable": false,
-     "baseline_drivable": false,
-     "time_min": null,
-     "baseline_time_min": 10.88,
-     "blocked_on_baseline": 27
-    },
-    {
-     "id": "O16",
-     "facility": "F01",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 7.19,
-     "baseline_time_min": 2.56,
-     "blocked_on_baseline": 1
-    },
-    {
-     "id": "O17",
-     "facility": null,
-     "reachable": false,
-     "baseline_drivable": false,
-     "time_min": null,
-     "baseline_time_min": 14.24,
-     "blocked_on_baseline": 15
-    },
-    {
-     "id": "O18",
-     "facility": null,
-     "reachable": false,
-     "baseline_drivable": false,
-     "time_min": null,
-     "baseline_time_min": 4.59,
-     "blocked_on_baseline": 7
-    },
-    {
-     "id": "O19",
-     "facility": "F01",
-     "reachable": true,
-     "baseline_drivable": false,
-     "time_min": 8.03,
-     "baseline_time_min": 5.24,
+     "time_min": 10.57,
+     "baseline_time_min": 4.11,
      "blocked_on_baseline": 3
     },
     {
-     "id": "O20",
+     "id": "O039",
      "facility": "F01",
      "reachable": true,
      "baseline_drivable": false,
-     "time_min": 22.85,
-     "baseline_time_min": 7.85,
-     "blocked_on_baseline": 19
+     "time_min": 16.72,
+     "baseline_time_min": 4.51,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O040",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 20.81,
+     "baseline_time_min": 7.19,
+     "blocked_on_baseline": 11
+    },
+    {
+     "id": "O041",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 34.69,
+     "baseline_time_min": 4.69,
+     "blocked_on_baseline": 11
+    },
+    {
+     "id": "O042",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 24.27,
+     "baseline_time_min": 7.28,
+     "blocked_on_baseline": 7
+    },
+    {
+     "id": "O043",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 3.5,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O044",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 17.1,
+     "baseline_time_min": 5.06,
+     "blocked_on_baseline": 11
+    },
+    {
+     "id": "O045",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 31.73,
+     "baseline_time_min": 10.76,
+     "blocked_on_baseline": 27
+    },
+    {
+     "id": "O046",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 33.81,
+     "baseline_time_min": 2.38,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O047",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 6.47,
+     "blocked_on_baseline": 18
+    },
+    {
+     "id": "O048",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 26.76,
+     "baseline_time_min": 4.86,
+     "blocked_on_baseline": 15
+    },
+    {
+     "id": "O049",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 17.18,
+     "baseline_time_min": 5.1,
+     "blocked_on_baseline": 11
+    },
+    {
+     "id": "O050",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 17.03,
+     "baseline_time_min": 4.9,
+     "blocked_on_baseline": 7
+    },
+    {
+     "id": "O051",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 6.73,
+     "blocked_on_baseline": 13
+    },
+    {
+     "id": "O052",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 7.87,
+     "blocked_on_baseline": 16
+    },
+    {
+     "id": "O053",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 8.62,
+     "baseline_time_min": 6.36,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O054",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 20.05,
+     "baseline_time_min": 6.57,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O055",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 0.57,
+     "blocked_on_baseline": 4
+    },
+    {
+     "id": "O056",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 9.97,
+     "blocked_on_baseline": 13
+    },
+    {
+     "id": "O057",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 10.64,
+     "baseline_time_min": 4.29,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O058",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.22,
+     "blocked_on_baseline": 13
+    },
+    {
+     "id": "O059",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 16.88,
+     "baseline_time_min": 4.74,
+     "blocked_on_baseline": 7
+    },
+    {
+     "id": "O060",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 32.88,
+     "baseline_time_min": 10.63,
+     "blocked_on_baseline": 8
+    },
+    {
+     "id": "O061",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 19.82,
+     "baseline_time_min": 5.2,
+     "blocked_on_baseline": 7
+    },
+    {
+     "id": "O062",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 11.91,
+     "baseline_time_min": 4.26,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O063",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 29.43,
+     "baseline_time_min": 5.13,
+     "blocked_on_baseline": 7
+    },
+    {
+     "id": "O064",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 10.13,
+     "blocked_on_baseline": 10
+    },
+    {
+     "id": "O065",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 34.07,
+     "baseline_time_min": 1.91,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O066",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 14.72,
+     "baseline_time_min": 4.23,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O067",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 1.95,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O068",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 9.68,
+     "blocked_on_baseline": 15
+    },
+    {
+     "id": "O069",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 11.33,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O070",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 34.69,
+     "baseline_time_min": 4.93,
+     "blocked_on_baseline": 11
+    },
+    {
+     "id": "O071",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 11.28,
+     "baseline_time_min": 2.35,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O072",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 17.96,
+     "baseline_time_min": 5.21,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O073",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 11.75,
+     "baseline_time_min": 5.3,
+     "blocked_on_baseline": 4
+    },
+    {
+     "id": "O074",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 18.61,
+     "baseline_time_min": 5.57,
+     "blocked_on_baseline": 8
+    },
+    {
+     "id": "O075",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 26.19,
+     "baseline_time_min": 7.69,
+     "blocked_on_baseline": 10
+    },
+    {
+     "id": "O076",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 22.8,
+     "baseline_time_min": 8.46,
+     "blocked_on_baseline": 22
+    },
+    {
+     "id": "O077",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 22.69,
+     "baseline_time_min": 8.51,
+     "blocked_on_baseline": 22
+    },
+    {
+     "id": "O078",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 25.08,
+     "baseline_time_min": 7.79,
+     "blocked_on_baseline": 9
+    },
+    {
+     "id": "O079",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 20.29,
+     "baseline_time_min": 5.46,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O080",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 5.75,
+     "blocked_on_baseline": 21
+    },
+    {
+     "id": "O081",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 28.2,
+     "baseline_time_min": 7.58,
+     "blocked_on_baseline": 9
+    },
+    {
+     "id": "O082",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 14.36,
+     "baseline_time_min": 2.68,
+     "blocked_on_baseline": 5
+    },
+    {
+     "id": "O083",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 13.45,
+     "baseline_time_min": 5.17,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O084",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 35.05,
+     "baseline_time_min": 7.61,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O085",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 11.87,
+     "baseline_time_min": 2.86,
+     "blocked_on_baseline": 4
+    },
+    {
+     "id": "O086",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 35.85,
+     "baseline_time_min": 1.5,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O087",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 36.0,
+     "baseline_time_min": 1.84,
+     "blocked_on_baseline": 4
+    },
+    {
+     "id": "O088",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 6.02,
+     "baseline_time_min": 4.48,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O089",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 23.22,
+     "baseline_time_min": 7.04,
+     "blocked_on_baseline": 7
+    },
+    {
+     "id": "O090",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 12.8,
+     "baseline_time_min": 6.31,
+     "blocked_on_baseline": 5
+    },
+    {
+     "id": "O091",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 10.57,
+     "blocked_on_baseline": 10
+    },
+    {
+     "id": "O092",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.75,
+     "baseline_time_min": 4.21,
+     "blocked_on_baseline": 1
+    },
+    {
+     "id": "O093",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.84,
+     "baseline_time_min": 3.67,
+     "blocked_on_baseline": 16
+    },
+    {
+     "id": "O094",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 6.54,
+     "blocked_on_baseline": 8
+    },
+    {
+     "id": "O095",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 8.95,
+     "blocked_on_baseline": 15
+    },
+    {
+     "id": "O096",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 1.79,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O097",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 11.62,
+     "baseline_time_min": 1.3,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O098",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 36.16,
+     "baseline_time_min": 1.81,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O099",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 31.97,
+     "baseline_time_min": 10.84,
+     "blocked_on_baseline": 18
+    },
+    {
+     "id": "O100",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 4.24,
+     "blocked_on_baseline": 10
+    },
+    {
+     "id": "O101",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 33.78,
+     "baseline_time_min": 2.21,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O102",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 11.46,
+     "baseline_time_min": 2.89,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O103",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 24.29,
+     "baseline_time_min": 6.15,
+     "blocked_on_baseline": 22
+    },
+    {
+     "id": "O104",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 11.77,
+     "baseline_time_min": 3.95,
+     "blocked_on_baseline": 9
+    },
+    {
+     "id": "O105",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 9.99,
+     "baseline_time_min": 1.46,
+     "blocked_on_baseline": 3
+    },
+    {
+     "id": "O106",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 8.87,
+     "baseline_time_min": 4.39,
+     "blocked_on_baseline": 4
+    },
+    {
+     "id": "O107",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 5.74,
+     "baseline_time_min": 3.87,
+     "blocked_on_baseline": 15
+    },
+    {
+     "id": "O108",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 23.42,
+     "baseline_time_min": 6.06,
+     "blocked_on_baseline": 20
+    },
+    {
+     "id": "O109",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 33.87,
+     "baseline_time_min": 2.3,
+     "blocked_on_baseline": 2
+    },
+    {
+     "id": "O110",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 6.08,
+     "baseline_time_min": 3.92,
+     "blocked_on_baseline": 16
+    },
+    {
+     "id": "O111",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 9.1,
+     "baseline_time_min": 2.68,
+     "blocked_on_baseline": 5
+    },
+    {
+     "id": "O112",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 33.55,
+     "baseline_time_min": 3.83,
+     "blocked_on_baseline": 10
+    },
+    {
+     "id": "O113",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 8.16,
+     "blocked_on_baseline": 30
+    },
+    {
+     "id": "O114",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 31.82,
+     "baseline_time_min": 4.02,
+     "blocked_on_baseline": 10
+    },
+    {
+     "id": "O115",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 7.98,
+     "blocked_on_baseline": 12
+    },
+    {
+     "id": "O116",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 12.59,
+     "baseline_time_min": 5.2,
+     "blocked_on_baseline": 4
+    },
+    {
+     "id": "O117",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 32.66,
+     "baseline_time_min": 3.1,
+     "blocked_on_baseline": 6
+    },
+    {
+     "id": "O118",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 6.71,
+     "blocked_on_baseline": 18
+    },
+    {
+     "id": "O119",
+     "facility": "F01",
+     "reachable": true,
+     "baseline_drivable": false,
+     "time_min": 16.3,
+     "baseline_time_min": 4.21,
+     "blocked_on_baseline": 7
+    },
+    {
+     "id": "O120",
+     "facility": null,
+     "reachable": false,
+     "baseline_drivable": false,
+     "time_min": null,
+     "baseline_time_min": 8.24,
+     "blocked_on_baseline": 12
     }
    ],
    "robustness": {
@@ -1039,29 +5412,129 @@
      0.05,
      0.3
     ],
-    "overall": 0.679,
-    "share_changed_at_least_once": 0.9,
+    "overall": 0.613,
+    "share_changed_at_least_once": 0.967,
     "per_origin": [
-     0.92,
+     0.48,
+     0.54,
+     0.62,
+     0.94,
      0.54,
      0.54,
+     0.88,
      0.94,
      0.54,
      0.9,
+     0.88,
+     0.32,
      0.54,
-     0.9,
      0.54,
      0.8,
      0.54,
+     0.54,
+     0.54,
+     0.64,
+     0.54,
+     0.54,
+     0.94,
+     0.88,
+     0.86,
      0.9,
      0.54,
      0.54,
+     0.54,
+     1.0,
+     0.54,
+     0.48,
+     0.6,
+     0.54,
+     0.68,
+     0.54,
+     0.54,
+     0.52,
+     0.54,
+     0.54,
+     0.54,
+     0.54,
+     0.54,
+     0.48,
+     0.54,
+     0.54,
+     0.54,
+     0.98,
+     0.54,
+     0.54,
+     0.52,
+     0.6,
+     0.38,
+     0.54,
+     0.54,
+     0.4,
+     0.66,
+     0.54,
+     0.46,
+     0.52,
+     0.74,
+     0.54,
+     0.54,
+     0.54,
      0.32,
-     1.0,
-     1.0,
+     0.54,
+     0.92,
+     0.64,
      0.26,
+     0.4,
+     0.54,
+     0.54,
+     0.54,
+     0.54,
+     0.52,
+     0.54,
+     0.54,
+     0.54,
+     0.54,
+     0.54,
+     0.4,
+     0.54,
+     0.54,
+     0.54,
+     0.56,
+     0.54,
+     0.54,
+     0.54,
      0.94,
-     0.38
+     0.54,
+     0.54,
+     0.32,
+     0.94,
+     0.9,
+     0.26,
+     0.26,
+     0.78,
+     0.54,
+     0.54,
+     0.54,
+     1.0,
+     0.54,
+     0.36,
+     0.54,
+     0.94,
+     0.94,
+     1.0,
+     0.9,
+     0.54,
+     0.54,
+     0.9,
+     0.94,
+     0.54,
+     0.92,
+     0.54,
+     0.86,
+     0.54,
+     0.54,
+     1.0,
+     0.54,
+     0.86
     ]
    }
   }

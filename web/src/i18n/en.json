@@ -193,5 +193,9 @@
   "iso.limit2_wards": "Population is Census 2011 (old), assumed evenly spread inside each ward; it is not where people are during a flood.",
   "iso.basis_census": "Census 2011, scaled to the study zone",
   "metrics.note_weighted": "Sample of {n} simulated origins, {runs} robustness runs. Coverage weights each origin by the Census 2011 population of its ward (scaled to the study zone), so it is an indicative share of people in the sample wards, not of the whole city. Not a prediction.",
-  "kpi.note_robust_na": "not defined for the observed composite (one fixed layer)"
+  "kpi.note_robust_na": "not defined for the observed composite (one fixed layer)",
+  "kpi.note_ci": "90% range across {resamples} weighted resamples: {lo} to {hi}",
+  "metrics.m1_ci": "Travel-time increase, 90% range (min)",
+  "metrics.m3_ci": "Origins reaching at least one facility, 90% range",
+  "metrics.m4_ci": "Coverage within {min} min, flood-aware, 90% range"
 }

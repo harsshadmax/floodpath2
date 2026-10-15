@@ -169,10 +169,28 @@ def test_ambulance_starts_must_be_simulated(tmp_path):
 
 
 def test_origins_seeded_and_stratified():
-    G = make_grid_graph()
-    flood = _flood_around_node(G, 12, 250)
+    # A 12x12 grid (144 nodes) so there is room for CONFIG.N_ORIGINS (120); a wide flood buffer
+    # around the centre node so at least CONFIG.MIN_FLOOD_ADJACENT_ORIGINS nodes are flood-adjacent.
+    G = make_grid_graph(12)
+    flood = _flood_around_node(G, 78, 700)
     a = fac.sample_origins(G, flood)
     b = fac.sample_origins(G, flood)
     assert list(a["node_id"]) == list(b["node_id"])
     assert len(a) == CONFIG.N_ORIGINS and a["node_id"].is_unique
     assert a["flood_adjacent"].sum() >= CONFIG.MIN_FLOOD_ADJACENT_ORIGINS
+
+
+def test_origins_population_weighted_favours_heavier_nodes():
+    """With node_weight given, a node with much higher weight should be picked far more often across
+    repeated independent draws than one with much lower weight (both outside the flood-adjacent pool,
+    so only the population-proportional draw explains the gap)."""
+    G = make_grid_graph(12)
+    flood = _flood_around_node(G, 78, 700)
+    heavy, light = 0, 143  # corners, far from the flood buffer
+    weight = {n: (1000.0 if n == heavy else (1.0 if n == light else 50.0)) for n in G.nodes}
+    picks_heavy = picks_light = 0
+    for seed in range(40):
+        a = fac.sample_origins(G, flood, seed=seed, node_weight=weight)
+        picks_heavy += int(heavy in set(a["node_id"]))
+        picks_light += int(light in set(a["node_id"]))
+    assert picks_heavy > picks_light
