@@ -77,7 +77,7 @@ export default function Dashboard() {
   // never stands alone (see src.metrics.bootstrap_ci; null when the scenario has no reachable origin).
   const ci = sm?.confidence_interval;
   const ciNote = (range: [number, number] | null | undefined, fmt: (x: number) => string) =>
-    range ? " " + T("kpi.note_ci", { resamples: ci!.resamples, lo: fmt(range[0]), hi: fmt(range[1]) }) : "";
+    range ? " " + T("kpi.note_ci", { lo: fmt(range[0]), hi: fmt(range[1]) }) : "";
   const kpis = [
     {
       key: "kpi.time_increase",
@@ -194,7 +194,12 @@ export default function Dashboard() {
             <div className="fp-grid-cards">
               {["card.map", "card.coverage_by_scenario", "card.isolation_top", "card.edge_classes", "card.reach_by_facility", "card.top_origins"].map(
                 (key) => (
-                  <Card key={key} title={T(key)} caption={caption} highlight={FOCUS_CARD[focus] === key}>
+                  <Card
+                    key={key}
+                    title={T(key === "card.isolation_top" && m?.population_basis === "ward_census_2011" ? "card.isolation_top_wards" : key)}
+                    caption={caption}
+                    highlight={FOCUS_CARD[focus] === key}
+                  >
                     {key === "card.map" ? (
                       <RouteMap scenario={scenario} lang={lang} />
                     ) : key === "card.isolation_top" ? (

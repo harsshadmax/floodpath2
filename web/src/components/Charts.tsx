@@ -112,17 +112,19 @@ export function EdgeClasses({ lang, m }: { lang: Lang; m: ScenarioMetrics }) {
 /** C5: share of sample origins that can still reach each facility. */
 export function ReachByFacility({ lang, m, metrics }: { lang: Lang; m: ScenarioMetrics; metrics: MetricsFile }) {
   const T = (k: string) => t(lang, k);
+  const allUnverified = metrics.facilities.every((f) => f.verification !== "phone_verified");
   return (
     <div className="fp-chart">
       {metrics.facilities.map((f) => (
         <Bar
           key={f.id}
-          label={`${f.id} · ${f.name.replace(/^GCC emergency obstetric unit, /, "").replace(/ \(.*\)$/, "")}`}
+          label={`${f.id} · ${f.name.replace(/^GCC emergency obstetric unit, /, "").replace(/ \(.*\)$/, "")}${f.verification !== "phone_verified" ? " †" : ""}`}
           value={m.m3_reach_by_facility[f.id] ?? 0}
           color="var(--blue)"
         />
       ))}
       <p className="fp-chart-note">{T("chart.share_origins")}</p>
+      {allUnverified ? <p className="fp-chart-note fp-chart-note-caution">† {T("chart.facilities_unverified")}</p> : null}
     </div>
   );
 }

@@ -134,11 +134,14 @@ export default function RouteExplorer({ scenario, lang }: { scenario: string; la
               <dt>{T("route.chosen")}</dt>
               <dd>
                 {res.reachable ? facName(res.facility_id) : T("result.unreachable")}
-                {res.reachable && (
-                  <span className="fp-badge">
-                    {T(VERIFY_KEY[data.facilities.find((f) => f.id === res.facility_id)?.verification ?? "unverified"])}
-                  </span>
-                )}
+                {res.reachable && (() => {
+                  const v = data.facilities.find((f) => f.id === res.facility_id)?.verification ?? "unverified";
+                  return (
+                    <span className={`fp-badge ${v === "phone_verified" ? "fp-badge-verified" : "fp-badge-caution"}`}>
+                      {T(VERIFY_KEY[v])}
+                    </span>
+                  );
+                })()}
               </dd>
               <dt>{T("route.time_fa")}</dt>
               <dd>{mins(res.time_min)}</dd>

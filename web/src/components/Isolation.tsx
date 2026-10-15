@@ -152,7 +152,7 @@ export default function IsolationPage({ scenario, lang }: { scenario: string; la
         </div>
       </div>
 
-      <h4 className="fp-h4">{T("iso.top_by_scenario")}</h4>
+      <h4 className="fp-h4">{T(wards ? "iso.top_by_scenario_wards" : "iso.top_by_scenario")}</h4>
       <div className="fp-iso-compare">
         {SIM.map((s) => {
           const prev = prevScenario(s);
