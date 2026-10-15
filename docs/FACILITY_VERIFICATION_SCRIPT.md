@@ -48,18 +48,68 @@ list accurately instead of guessing."
 6. Closing: "Thank you — can I confirm your name and designation, and today's date, for our
    records?" Record the person's name, designation, phone number called, and the date/time.
 
-## After each call: fill in one row per facility
+## Email version (for a facility you can't reach by phone)
+
+Use this when a call goes unanswered a few times, the facility has no listed phone number, or
+email is simply easier to send to several facilities at once. Send one email per facility (not one
+group email) so each reply is unambiguous about which facility it covers. If you have a Zonal
+Health Officer or GCC Health Department email instead of the facility's own, send it there and ask
+them to forward it or answer on the facility's behalf.
+
+**Subject:** Quick question about emergency obstetric services at [facility name] — student civic
+project
+
+**Body:**
+
+> Dear Sir/Madam,
+>
+> I am a student at Sathyabama Institute of Science and Technology, Chennai, working on a civic
+> technology project for the Seva First Innovation Challenge 2026. The project maps flood-aware
+> emergency routing to maternity facilities in central Chennai, and I would like to describe
+> [facility name] accurately rather than assume its capabilities.
+>
+> Could you kindly confirm the following, at your convenience:
+>
+> 1. Does the facility provide delivery services 24 hours a day, every day, including nights and
+>    weekends?
+> 2. If a delivery needs a caesarean section, is that done on site? If not, which facility is the
+>    patient referred to, and roughly how long does that transfer usually take?
+> 3. Is blood available on site for a transfusion during delivery, or is there a tie-up with a
+>    blood bank? If so, which one?
+> 4. At night and on weekends, is a doctor physically present at the facility, or on call from
+>    home?
+> 5. Approximately how many deliveries does the facility handle in a typical month? (This is only
+>    for context, not required.)
+>
+> This is an academic prototype, not an official survey or audit, and the information will be
+> used only to label our facility list accurately (with a citation to your reply) rather than
+> mark it as unverified. I would be glad to share the published project with you once complete.
+>
+> Could I also confirm your name and designation, for citing this information correctly?
+>
+> Thank you for your time.
+>
+> [Your name]
+> [Your phone number / student email]
+> Sathyabama Institute of Science and Technology
+
+Record the email address used, the date sent, and — once a reply arrives — treat it exactly like a
+phone call in the tracking table below: same four questions, same verdict categories, same CSV
+update rule (`phone_verified` only applies to answers actually received; if the reply is partial or
+no reply ever comes, it stays `unverified` with the attempt noted in `notes`).
+
+## After each call or email: fill in one row per facility
 
 Keep this table (or update `data/facilities.csv` directly — see the column mapping below) as each
 call finishes.
 
-| Facility (facility_id) | Called on | Person, designation | 24x7 delivery? | C-section on site? | Blood on site/tie-up? | Doctor present at night? | Verdict | Notes |
-|---|---|---|---|---|---|---|---|---|
-| F01 Purasaiwalkam (EOCU_GCHM1) | | | | | | | | |
-| F02 Shenoy Nagar (EOCU_GCHM2) | | | | | | | | |
-| F03 Saidapet (EOCU_GCHM3) | | | | | | | | |
-| F04 Mugalivakkam (EOCU_GCHM4) | | | | | | | | |
-| F05 Thoraipakkam (EOCU_GCHM5) | | | | | | | | |
+| Facility (facility_id) | Method (call/email) | Date | Person, designation | 24x7 delivery? | C-section on site? | Blood on site/tie-up? | Doctor present at night? | Verdict | Notes |
+|---|---|---|---|---|---|---|---|---|---|
+| F01 Purasaiwalkam (EOCU_GCHM1) | | | | | | | | | |
+| F02 Shenoy Nagar (EOCU_GCHM2) | | | | | | | | | |
+| F03 Saidapet (EOCU_GCHM3) | | | | | | | | | |
+| F04 Mugalivakkam (EOCU_GCHM4) | | | | | | | | | |
+| F05 Thoraipakkam (EOCU_GCHM5) | | | | | | | | | |
 
 Verdict is one of: **CEmONC confirmed** (→ `phone_verified` in the CSV) / **partial, say what it
 offers** (→ stays `unverified`, flag to me) / **could not confirm** (e.g. no one available, number
