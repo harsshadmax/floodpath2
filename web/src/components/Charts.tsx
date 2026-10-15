@@ -38,6 +38,7 @@ export type ScenarioMetrics = {
 export type MetricsFile = {
   population_basis?: string;
   facilities: { id: string; name: string; verification: string }[];
+  excluded_facilities?: { facility_id: string; reason: string }[];
   scenarios: Record<string, ScenarioMetrics>;
   n_origins: number;
 };
@@ -111,7 +112,7 @@ export function EdgeClasses({ lang, m }: { lang: Lang; m: ScenarioMetrics }) {
 
 /** C5: share of sample origins that can still reach each facility. */
 export function ReachByFacility({ lang, m, metrics }: { lang: Lang; m: ScenarioMetrics; metrics: MetricsFile }) {
-  const T = (k: string) => t(lang, k);
+  const T = (k: string, params?: Record<string, string | number>) => t(lang, k, params);
   const allUnverified = metrics.facilities.every((f) => f.verification !== "phone_verified");
   return (
     <div className="fp-chart">
@@ -125,6 +126,14 @@ export function ReachByFacility({ lang, m, metrics }: { lang: Lang; m: ScenarioM
       ))}
       <p className="fp-chart-note">{T("chart.share_origins")}</p>
       {allUnverified ? <p className="fp-chart-note fp-chart-note-caution">† {T("chart.facilities_unverified")}</p> : null}
+      {metrics.excluded_facilities && metrics.excluded_facilities.length > 0 ? (
+        <p className="fp-chart-note">
+          {T("chart.facilities_excluded", {
+            n: metrics.excluded_facilities.length,
+            ids: metrics.excluded_facilities.map((f) => f.facility_id).join(", "),
+          })}
+        </p>
+      ) : null}
     </div>
   );
 }

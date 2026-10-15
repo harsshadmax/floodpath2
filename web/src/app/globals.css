@@ -333,6 +333,13 @@ html[lang="hi"] .fp-caps {
     grid-template-columns: 1fr;
   }
 }
+/* Grid items default to min-width:auto, so a child with a wide intrinsic size (the Leaflet map
+   card) refuses to shrink and pushes the whole grid past the viewport on a narrow screen. */
+.fp-overview-split > *,
+.fp-route-grid > *,
+.fp-iso-grid > * {
+  min-width: 0;
+}
 @media (min-width: 1150px) {
   .fp-grid-kpi {
     grid-template-columns: repeat(5, 1fr);
@@ -422,6 +429,13 @@ html[lang="hi"] .fp-caps {
   overflow: hidden;
   border: 0.5px solid var(--border);
   position: relative;
+  /* Leaflet sizes its internal panes to a fixed pixel width at mount; as a CSS Grid item this
+     div's default min-width:auto then refuses to shrink below that intrinsic size, pushing the
+     whole grid (and the page) wider than the viewport on a narrow screen even though
+     overflow:hidden clips the map's own content. min-width:0 lets the grid track actually
+     shrink the box to the column width instead of the map's native size. */
+  min-width: 0;
+  width: 100%;
 }
 .fp-map-toggles {
   display: flex;
@@ -598,6 +612,22 @@ html[lang="hi"] .fp-caps {
 
 /* header focus toggle: highlighted cards */
 .fp-focus { outline: 2px solid var(--blue); outline-offset: -2px; }
+.fp-link-btn {
+  display: block;
+  margin-top: 10px;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--blue);
+  cursor: pointer;
+  text-align: left;
+}
+.fp-link-btn:hover {
+  text-decoration: underline;
+}
 
 /* ---------- phone width: the rail and title were never given a narrow-screen size (PHASE 13
    mobile pass). Below 640px the 76px rail took a fifth of a 375px viewport and the 46px title
@@ -685,5 +715,18 @@ html[lang="hi"] .fp-caps {
   .fp-table th,
   .fp-table td {
     white-space: nowrap;
+  }
+  /* The route-result key/value grid (auto 1fr) squeezed long facility names into a narrow
+     value column on phone width. Stacking label above value reads better than a tall thin
+     second column. */
+  .fp-result {
+    grid-template-columns: 1fr;
+    gap: 2px 0;
+  }
+  .fp-result dt {
+    margin-top: 10px;
+  }
+  .fp-result dt:first-child {
+    margin-top: 0;
   }
 }

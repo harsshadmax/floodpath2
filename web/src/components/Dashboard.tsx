@@ -187,6 +187,10 @@ export default function Dashboard() {
         </div>
 
         <Banner text={T("banner.simulation")} />
+        {/* The observed composite routes on the union of every flood layer, so every facility is
+            cut off and every KPI reads 0% by design -- without this, 0% everywhere could easily
+            read as a broken page rather than the deliberate extreme upper bound it actually is. */}
+        {scenario === "observed" && <div className="fp-notice" role="note">{T("kpi.observed_boundary_note")}</div>}
 
         {page === "overview" && (
           <>
@@ -206,6 +210,9 @@ export default function Dashboard() {
               </Card>
               <Card title={T("card.top_origins")} caption={caption} highlight={FOCUS_CARD[focus] === "card.top_origins"}>
                 {sm ? <TopOrigins lang={lang} m={sm} /> : <Placeholder text={offNote} />}
+                <button type="button" className="fp-link-btn" onClick={() => setPage("route")}>
+                  {T("link.view_all_origins")} &rarr;
+                </button>
               </Card>
             </div>
             <div className="fp-grid-cards">
