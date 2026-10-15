@@ -13,6 +13,20 @@ Not live data, not a flood predictor, not a dispatch system. Ambulance data is s
 3. No open flood extent exists for the 1-4 Dec 2015 peak; the observed scenario is a composite of available layers.
 4. Current OpenStreetMap roads differ from 2015 roads.
 
+## Closing these gaps (real-world outreach, in progress)
+`FloodPath-Care_Required_Changes.pdf` lists everything still needed; three of these gaps need a
+real person contacted, not more code, so they have ready-to-send templates:
+- [docs/FACILITY_VERIFICATION_SCRIPT.md](docs/FACILITY_VERIFICATION_SCRIPT.md) — call and email
+  scripts to confirm whether each of the 5 candidate facilities actually offers 24x7 emergency
+  obstetric care (gap 1).
+- [docs/AMBULANCE_LOCATIONS_EMAIL.md](docs/AMBULANCE_LOCATIONS_EMAIL.md) — email requesting real
+  108 ambulance base locations from GVK EMRI Tamil Nadu (gap 2).
+- [docs/ROUTE_VALIDATION_EMAIL.md](docs/ROUTE_VALIDATION_EMAIL.md) — email requesting an
+  independent check on one or two specific routes against real December 2015 flood conditions
+  (gaps 3 and 4).
+- [docs/VALIDATION.md](docs/VALIDATION.md) — the log every reply gets written into, confirmation
+  or contradiction alike, plus what changes in the app once it is.
+
 ## Setup
 
 ### Just running the web app (clean clone, no data download)
