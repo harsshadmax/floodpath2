@@ -200,5 +200,9 @@
   "metrics.m4_ci": "Coverage within {min} min, flood-aware, 90% range",
   "iso.top_by_scenario_wards": "Top five wards by scenario",
   "card.isolation_top_wards": "Top wards by isolation priority",
-  "chart.facilities_unverified": "All facilities above are unverified candidates (not confirmed by phone)."
+  "chart.facilities_unverified": "All facilities above are unverified candidates (not confirmed by phone).",
+  "page.data.context_title": "How this compares to Chennai's official flood plan",
+  "page.data.context_body1": "The Greater Chennai Corporation's City Disaster Management Perspective Plan (CDMP, 2019-2030) is strongest at reactive flood response: it documents 176 relief centres, 1,686 motor pumps (including 113 high-capacity units) deployed in the 2015 floods, and routine drain desilting. It is comparatively weaker on preventing recurrent flooding: the plan itself records a lack of continuous connectivity between stormwater drains and macro drainage, and ongoing, unfinished work on drainage completion, water-body protection and flood-sensitive land-use enforcement.",
+  "page.data.context_body2": "The plan identifies at-risk neighbourhoods using flood maps, historical inundation records (its per-ward maps are dated 2005), ward and field reports, drainage data and manual verification -- not a continuously updated road-network accessibility model. FloodPath-Care is an exploratory attempt at that specific, still-missing piece: it does not replace the CDMP's relief operations, and its flood scenarios are seeded subsets of crowd-sourced reports, not the plan's own survey data.",
+  "page.data.context_sources": "Sources: Greater Chennai Corporation, City Disaster Management Perspective Plan 2019-2030 (CDMP 2025 edition), portal.chennaicorporation.gov.in/gcc/pdf/CDMP_2025.pdf; Chennai District disaster management page, chennai.nic.in/disaster-management. Accessed 2026-10-16."
 }

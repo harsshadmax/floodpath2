@@ -264,6 +264,13 @@ function DataPage({ lang }: { lang: Lang }) {
   const T = (key: string) => t(lang, key);
   return (
     <div>
+      <h2 className="fp-h2">{T("page.data.context_title")}</h2>
+      <div className="fp-card">
+        <p>{T("page.data.context_body1")}</p>
+        <p>{T("page.data.context_body2")}</p>
+        <p className="fp-original">{T("page.data.context_sources")}</p>
+      </div>
+
       <h2 className="fp-h2">{T("page.data.gaps_title")}</h2>
       <div className="fp-stack">
         {GAP_KEYS.map((key) => (

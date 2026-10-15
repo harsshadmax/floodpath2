@@ -95,3 +95,26 @@ Two files were downloaded with the user's approval into `data/raw/wards/` (not c
 - **`scripts/sensitivity_sweep.py`** re-runs moderate and severe under 5 alternative settings of the three edge-classification thresholds (at-risk fraction, blocked fraction, at-risk delay multiplier) and writes `docs/SENSITIVITY.md`. Finding: moderate's headline numbers move only a few points across the sweep, but severe collapses to 0% reachable at a slightly more cautious threshold (0.05/0.35 instead of the shipped 0.10/0.50) -- the same cliff documented in PHASE 10/11 at 25-30% of reports, now also visible from the threshold side. Severe's numbers should be read as one side of a cliff, not a stable estimate.
 - **Scenario names now describe the mechanism, not implied severity**: "Mild/Moderate/Severe" became "8%/16%/25% blocked" (`scenario.mild/moderate/severe`), and "Observed composite" became "2015 reported flood extent" (`scenario.observed`). This removes the implication that the tool measured or predicts flood severity; it runs seeded subsets of street-level reports. Internal scenario keys (mild/moderate/severe/observed) are unchanged, only the displayed label.
 - **Still open from the required-changes list:** facility verification, route validation against real 2015 data, and real ambulance base locations still need the project owner or outside sources (see `FloodPath-Care_Required_Changes.pdf`).
+
+## Context (2026-10-16): how this compares to Chennai's official flood plan
+Added to the app's Data and limits page (`page.data.context_*` keys) after reading the Greater
+Chennai Corporation's City Disaster Management Perspective Plan (CDMP, 2019-2030, "2025 edition"
+PDF, 805 pages with a text layer; downloaded and `pypdf`-extracted in full to verify before citing,
+not taken on summary alone) and the Chennai District disaster management page.
+- **The CDMP is strongest at reactive flood response**: it documents 176 relief centres, 1,686
+  motor pumps (113 high-capacity) deployed in the 2015 floods, and routine drain desilting.
+- **It is comparatively weaker on prevention**: the plan itself records "lack of continuous
+  connectivity of Stormwater drainages with macro drainage systems" and ongoing, unfinished work
+  on drainage completion, water-body protection and flood-sensitive land-use enforcement. It is a
+  perspective plan running to 2030, so these are necessarily ongoing items, not one-time-completed
+  actions.
+- **Vulnerable-area identification in the CDMP is flood maps, historical records, ward/field
+  reports and manual verification** -- the per-ward "FLOOD INUNDATION MAP" figures in the document
+  are dated 2005, not a continuously updated model. This is the specific, still-missing piece
+  FloodPath-Care explores: a road-network accessibility model. It does not replace the CDMP's
+  relief operations, and its flood scenarios are seeded subsets of crowd-sourced reports, not the
+  plan's own survey data -- the comparison is about what kind of tool is missing, not a claim that
+  this prototype is more authoritative than the official plan.
+- **Sources**: Greater Chennai Corporation, City Disaster Management Perspective Plan 2019-2030
+  (CDMP 2025 edition), `portal.chennaicorporation.gov.in/gcc/pdf/CDMP_2025.pdf`; Chennai District
+  disaster management page, `chennai.nic.in/disaster-management`. Accessed 2026-10-16.
