@@ -319,12 +319,26 @@ html[lang="hi"] .fp-caps {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 22px;
 }
+/* Map + routing log side by side (PHASE 13, Velize reference: a wide map panel next to a
+   narrower live-table panel), above the smaller chart-card row. Falls back to one column on
+   narrow viewports, same breakpoint as the isolation page's two-column layout. */
+.fp-overview-split {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 22px;
+  margin-bottom: 22px;
+}
+@media (max-width: 1000px) {
+  .fp-overview-split {
+    grid-template-columns: 1fr;
+  }
+}
 @media (min-width: 1150px) {
   .fp-grid-kpi {
     grid-template-columns: repeat(5, 1fr);
   }
   .fp-grid-cards {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

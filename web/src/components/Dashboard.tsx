@@ -191,8 +191,20 @@ export default function Dashboard() {
                 <KpiCard key={k.key} label={T(k.key)} value={k.value} note={k.note} notBuilt={k.none} spark={k.spark} highlight={FOCUS_KPI[focus] === k.key} />
               ))}
             </div>
+            {/* Map beside a routing log (PHASE 13, Velize reference layout), instead of the map
+                sitting in the same even grid as every other chart card: the map is the thing
+                worth the most space, and "origins with the largest travel-time increase" reads
+                as a log of what the simulation found, not just another chart. */}
+            <div className="fp-overview-split">
+              <Card title={T("card.map")} caption={caption} highlight={FOCUS_CARD[focus] === "card.map"}>
+                <RouteMap scenario={scenario} lang={lang} />
+              </Card>
+              <Card title={T("card.top_origins")} caption={caption} highlight={FOCUS_CARD[focus] === "card.top_origins"}>
+                {sm ? <TopOrigins lang={lang} m={sm} /> : <Placeholder text={offNote} />}
+              </Card>
+            </div>
             <div className="fp-grid-cards">
-              {["card.map", "card.coverage_by_scenario", "card.isolation_top", "card.edge_classes", "card.reach_by_facility", "card.top_origins"].map(
+              {["card.coverage_by_scenario", "card.isolation_top", "card.edge_classes", "card.reach_by_facility"].map(
                 (key) => (
                   <Card
                     key={key}
@@ -200,9 +212,7 @@ export default function Dashboard() {
                     caption={caption}
                     highlight={FOCUS_CARD[focus] === key}
                   >
-                    {key === "card.map" ? (
-                      <RouteMap scenario={scenario} lang={lang} />
-                    ) : key === "card.isolation_top" ? (
+                    {key === "card.isolation_top" ? (
                       <IsolationTop scenario={scenario} lang={lang} />
                     ) : key === "card.coverage_by_scenario" && m ? (
                       <CoverageByScenario lang={lang} metrics={m} />
@@ -210,8 +220,6 @@ export default function Dashboard() {
                       <EdgeClasses lang={lang} m={sm} />
                     ) : key === "card.reach_by_facility" && sm && m ? (
                       <ReachByFacility lang={lang} m={sm} metrics={m} />
-                    ) : key === "card.top_origins" && sm ? (
-                      <TopOrigins lang={lang} m={sm} />
                     ) : (
                       <Placeholder text={offNote} />
                     )}
