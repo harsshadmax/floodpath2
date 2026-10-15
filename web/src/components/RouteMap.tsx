@@ -79,15 +79,17 @@ export default function RouteMap({ scenario, lang }: { scenario: string; lang: L
 
   return (
     <div>
-      <div className="fp-map-toggles">
-        <label>
-          <input type="checkbox" checked={showFlood} onChange={(e) => setShowFlood(e.target.checked)} /> {T("map.flood_layer")}
-        </label>
-        <label>
-          <input type="checkbox" checked={showRoads} onChange={(e) => setShowRoads(e.target.checked)} /> {T("map.roads_layer")}
-        </label>
-      </div>
       <div className="fp-map-frame" role="img" aria-label={T("card.map")}>
+        {/* Floating layer panel over the map (PHASE 13 UI reference pass), instead of plain
+            checkboxes above it -- same two controls, styled like the reference's "All Layers" box. */}
+        <div className="fp-map-toggles fp-map-toggles-float">
+          <label>
+            <input type="checkbox" checked={showFlood} onChange={(e) => setShowFlood(e.target.checked)} /> {T("map.flood_layer")}
+          </label>
+          <label>
+            <input type="checkbox" checked={showRoads} onChange={(e) => setShowRoads(e.target.checked)} /> {T("map.roads_layer")}
+          </label>
+        </div>
         <MapContainer
           bounds={[
             [south, west],

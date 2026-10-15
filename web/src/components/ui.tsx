@@ -96,6 +96,7 @@ export function KpiCard({
   notBuilt,
   spark,
   highlight,
+  icon,
 }: {
   label: string;
   value: string | null;
@@ -105,11 +106,15 @@ export function KpiCard({
   spark?: ReactNode;
   notBuilt: string;
   highlight?: boolean;
+  icon?: ReactNode;
 }) {
   return (
     <div className={highlight ? "fp-card fp-focus" : "fp-card"}>
       <div className="fp-kpi-top">
-        <span className="fp-kpi-label fp-caps">{label}</span>
+        <span className="fp-kpi-top-left">
+          {icon ? <span className="fp-kpi-icon" aria-hidden="true">{icon}</span> : null}
+          <span className="fp-kpi-label fp-caps">{label}</span>
+        </span>
         {delta ? <span className={`fp-kpi-delta ${deltaTone ?? ""}`}>{delta}</span> : null}
       </div>
       <div className="fp-kpi-row">

@@ -346,9 +346,28 @@ html[lang="hi"] .fp-caps {
 .fp-kpi-top {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   gap: 8px;
   min-height: 18px;
+}
+.fp-kpi-top-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+/* Small icon badge in the top-left of a KPI tile (PHASE 13 UI reference pass): a flat tinted
+   square, not a circle-with-shadow, so it reads as part of the flat system rather than a sticker. */
+.fp-kpi-icon {
+  flex: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  background: var(--blue-soft);
+  color: var(--blue-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .fp-kpi-label {
   font-size: 12px;
@@ -402,6 +421,7 @@ html[lang="hi"] .fp-caps {
   border-radius: 10px;
   overflow: hidden;
   border: 0.5px solid var(--border);
+  position: relative;
 }
 .fp-map-toggles {
   display: flex;
@@ -409,6 +429,22 @@ html[lang="hi"] .fp-caps {
   gap: 14px;
   font-size: 12px;
   margin-bottom: 8px;
+}
+/* Floating "All Layers"-style panel over the map, instead of plain checkboxes above it
+   (PHASE 13 UI reference pass). Sits above Leaflet's own panes (z-index up to ~650). */
+.fp-map-toggles-float {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  background: var(--card);
+  border: 0.5px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 0;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: none;
 }
 .fp-map-toggles label {
   display: inline-flex;

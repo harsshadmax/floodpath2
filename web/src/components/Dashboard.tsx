@@ -9,7 +9,7 @@ import { LANGS, LANG_LABELS, englishOriginal, fmtPct, normalizeLang, t, translat
 import MetricsTable from "./MetricsTable";
 import ExportPage from "./ExportPage";
 import { CoverageByScenario, EdgeClasses, ReachByFacility, Spark, TopOrigins, type MetricsFile } from "./Charts";
-import { DashboardIcon, DownloadIcon, InfoIcon, LayersIcon, RouteIcon, TableIcon } from "./icons";
+import { CheckShieldIcon, ClockIcon, DashboardIcon, DownloadIcon, InfoIcon, LayersIcon, PulseIcon, RouteIcon, TableIcon, TargetIcon, UsersIcon } from "./icons";
 import { Banner, Card, KpiCard, Pills, Placeholder, Rail, type RailItem } from "./ui";
 
 // Leaflet touches `window`, so the map loads in the browser only.
@@ -81,6 +81,7 @@ export default function Dashboard() {
   const kpis = [
     {
       key: "kpi.time_increase",
+      icon: <ClockIcon />,
       value: sm && sm.m1_time_increase_min.mean !== null ? `+${sm.m1_time_increase_min.mean.toFixed(1)} ${T("unit.minutes")}` : null,
       note: sm && sm.m1_time_increase_min.mean !== null
         ? T("kpi.note_time", { n: sm.m1_time_increase_min.n, max: sm.m1_time_increase_min.max ?? 0 })
@@ -91,6 +92,7 @@ export default function Dashboard() {
     },
     {
       key: "kpi.feasibility",
+      icon: <CheckShieldIcon />,
       value: sm ? fmtPct(sm.m2_false_route_rate) : null,
       note: T("kpi.note_feasibility"),
       none: offNote,
@@ -98,6 +100,7 @@ export default function Dashboard() {
     },
     {
       key: "kpi.reachability",
+      icon: <TargetIcon />,
       value: sm ? fmtPct(sm.m3_reach_any) : null,
       note: sm
         ? T("kpi.note_reach", { n: Math.round(sm.m3_reach_any * sm.n_origins), total: sm.n_origins })
@@ -108,6 +111,7 @@ export default function Dashboard() {
     },
     {
       key: "kpi.coverage",
+      icon: <UsersIcon />,
       value: sm ? fmtPct(sm.m4_coverage_flood_aware) : null,
       note: sm
         ? T("kpi.note_coverage", { min: sm.coverage_threshold_min, conv: fmtPct(sm.m4_coverage_conventional) })
@@ -118,6 +122,7 @@ export default function Dashboard() {
     },
     {
       key: "kpi.robustness",
+      icon: <PulseIcon />,
       value: sm && sm.robustness ? fmtPct(sm.robustness.overall) : null,
       note: sm && sm.robustness ? T("kpi.note_robust", { pct: fmtPct(sm.robustness.share_changed_at_least_once), runs: sm.robustness.runs }) : undefined,
       none: sm ? T("kpi.note_robust_na") : offNote,
@@ -188,7 +193,7 @@ export default function Dashboard() {
             <p className="fp-metrics-note">{T("note.indicative_metrics")}</p>
             <div className="fp-grid-kpi">
               {kpis.map((k) => (
-                <KpiCard key={k.key} label={T(k.key)} value={k.value} note={k.note} notBuilt={k.none} spark={k.spark} highlight={FOCUS_KPI[focus] === k.key} />
+                <KpiCard key={k.key} label={T(k.key)} value={k.value} note={k.note} notBuilt={k.none} spark={k.spark} highlight={FOCUS_KPI[focus] === k.key} icon={k.icon} />
               ))}
             </div>
             {/* Map beside a routing log (PHASE 13, Velize reference layout), instead of the map

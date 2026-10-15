@@ -68,3 +68,38 @@ export const DownloadIcon = () => (
     <path d="M5 19h14" />
   </Svg>
 );
+
+// KPI-tile icons (PHASE 13 UI reference pass): one small decorative glyph per headline number,
+// matching the icon-in-tile pattern of the Dribbble reference this theme was adapted from.
+export const ClockIcon = () => (
+  <Svg size={18}>
+    <circle cx="12" cy="12" r="9" />
+    <path d="M12 7v5l3.5 2" />
+  </Svg>
+);
+export const CheckShieldIcon = () => (
+  <Svg size={18}>
+    <path d="M12 3.5 5 6v5.5c0 4.500 3 7.500 7 9 4-1.500 7-4.500 7-9V6l-7-2.5Z" />
+    <path d="m9 12 2 2 4-4" />
+  </Svg>
+);
+export const TargetIcon = () => (
+  <Svg size={18}>
+    <circle cx="12" cy="12" r="8.500" />
+    <circle cx="12" cy="12" r="4.500" />
+    <circle cx="12" cy="12" r="0.800" fill="currentColor" stroke="none" />
+  </Svg>
+);
+export const UsersIcon = () => (
+  <Svg size={18}>
+    <circle cx="9" cy="8.500" r="3.200" />
+    <path d="M3.200 19c0.700-3.200 3-5 5.800-5s5.100 1.800 5.800 5" />
+    <path d="M15.500 6.200c1.600 0.300 2.800 1.700 2.800 3.300 0 1.600-1.200 3-2.800 3.300" />
+    <path d="M18 14.500c1.900 0.400 3.300 1.900 3.800 4.500" />
+  </Svg>
+);
+export const PulseIcon = () => (
+  <Svg size={18}>
+    <path d="M3 12h4l2-6 4 12 2-6h6" />
+  </Svg>
+);
