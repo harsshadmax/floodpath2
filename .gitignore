@@ -11,5 +11,7 @@ data/processed/*.geojson
 data/processed/*.json
 data/processed/*.csv
 .env
-# Generated map data for the web app (derived from OpenStreetMap and OpenCity; rebuild with scripts/build_phase2.py)
-web/public/data/
+# web/public/data/ IS committed: it is the generated output the web app reads (derived from
+# OpenStreetMap ODbL and OpenCity; not raw third-party data), and a clean clone needs it to run
+# without first installing the Python pipeline and the raw datasets. Regenerate it from source
+# with `python scripts/build_all.py` after placing the raw datasets in data/raw/ (see SOURCES.md).

@@ -1,0 +1,75 @@
+{
+  "generated_on": "2026-10-15",
+  "study": {
+    "name": "Central Chennai (Saidapet, Shenoy Nagar, Purasaiwalkam)",
+    "bbox": [
+      80.205,
+      13.01,
+      80.27,
+      13.1
+    ]
+  },
+  "roads": {
+    "file": "roads.geojson",
+    "features": 30403,
+    "kb": 5521,
+    "nodes": 12330,
+    "edges": 30403,
+    "total_length_km": 2240.9,
+    "strongly_connected_components": 63,
+    "largest_scc_nodes": 12214,
+    "note": "Current OpenStreetMap roads, not 2015 roads (standing gap 4)."
+  },
+  "flood": {
+    "files": {
+      "observed": "flood_observed.geojson",
+      "mild": "flood_mild.geojson",
+      "moderate": "flood_moderate.geojson",
+      "severe": "flood_severe.geojson"
+    },
+    "kb": {
+      "observed": 409,
+      "mild": 43,
+      "moderate": 88,
+      "severe": 126
+    },
+    "kinds": {
+      "observed": "composite",
+      "mild": "simulated",
+      "moderate": "simulated",
+      "severe": "simulated"
+    },
+    "date": "2015 event (day unknown)",
+    "stats": {
+      "component_area_km2_in_zone": {
+        "inundation": 27.497,
+        "stagnation": 3.606,
+        "gcc_hotspots": 1.398,
+        "crowd_lines": 20.783
+      },
+      "scenario_area_km2": {
+        "observed": 41.59,
+        "mild": 2.44,
+        "moderate": 5.05,
+        "severe": 7.64
+      },
+      "zone_area_km2": 70.2,
+      "feature_counts_in_zone": {
+        "inundation": 290,
+        "stagnation": 217,
+        "gcc_hotspots": 87,
+        "crowd_lines": 2139
+      }
+    },
+    "note": "The observed layer is a composite of OpenCity layers, not the 1-4 Dec 2015 peak (standing gap 3)."
+  },
+  "assumptions": {
+    "POINT_BUFFER_M": 75.0,
+    "LINE_BUFFER_M": 25.0,
+    "SCENARIO_FEATURE_SHARE": {
+      "mild": 0.08,
+      "moderate": 0.16,
+      "severe": 0.25
+    }
+  }
+}

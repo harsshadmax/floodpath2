@@ -1,0 +1,41 @@
+name: CI
+
+# Verifies the repo is reproducible from a clean checkout: Python tests pass, and the web app
+# builds from the data already committed under web/public/data/ and web/src/.
+# This does NOT rebuild the data pipeline (scripts/build_all.py) -- that needs the raw third-party
+# datasets in data/raw/, which carry licences (UNOSAT CC BY-NC-SA, OSM ODbL, OpenCity) that keep
+# them out of this repo and out of CI. See SOURCES.md.
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+    branches: [master, main]
+
+jobs:
+  python-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install -r requirements.lock.txt
+      - run: pytest -q
+
+  web-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Fail if the web app's data is missing from the repo
+        run: |
+          test -f web/public/data/manifest.json
+          test -f web/src/data/config.json
+          test -f web/src/i18n/en.json
+      - run: npm ci
+        working-directory: web
+      - run: npm run build
+        working-directory: web

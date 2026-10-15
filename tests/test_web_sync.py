@@ -27,3 +27,16 @@ def test_web_config_matches_python_config():
     assert values["SCENARIO_FEATURE_SHARE"] == dict(CONFIG.SCENARIO_FEATURE_SHARE)
     assert values["RANDOM_SEED"] == CONFIG.RANDOM_SEED
     assert web["study"]["bbox"] == list(CONFIG.STUDY_BBOX), "run: python scripts/export_web_config.py"
+
+
+@pytest.mark.parametrize("name", [
+    "manifest.json", "roads.geojson", "metrics.json", "routes.json",
+    "isolation.json", "audit.json",
+    "flood_observed.geojson", "flood_mild.geojson", "flood_moderate.geojson", "flood_severe.geojson",
+])
+def test_web_public_data_is_present(name):
+    """web/public/data/ must be committed (not git-ignored): a clean checkout has to run the site
+    without first installing the Python pipeline and the raw datasets. If this fails, run
+    `python scripts/build_all.py` and commit web/public/data/."""
+    path = ROOT / "web" / "public" / "data" / name
+    assert path.is_file(), f"missing {path}; run: python scripts/build_all.py"

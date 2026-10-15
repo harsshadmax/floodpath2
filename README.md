@@ -14,31 +14,37 @@ Not live data, not a flood predictor, not a dispatch system. Ambulance data is s
 4. Current OpenStreetMap roads differ from 2015 roads.
 
 ## Setup
-Python analysis (tests and, later, the pipeline that writes the data the web app reads):
-```
-python -m venv .venv
-.venv\Scripts\python -m pip install -r requirements.txt
-.venv\Scripts\python -m pytest
-```
-Data for the map (PHASE 2): download the small OpenCity files, then build the road graph, flood layers and scenarios (needs internet once; the graph is cached):
-```
-.venv\Scripts\python src\fetch_data.py
-.venv\Scripts\python scripts\build_phase2.py
-```
-This writes `data/processed/` and `web/public/data/` (both gitignored). Without it the map card shows a "run build_phase2.py" message.
-Then `.venvScriptspython scriptsbuild_phase3.py` writes `data/facilities.csv`, `data/ambulance_starts.csv`, builds the sample origins and prints a routing summary per scenario. The simulated scenarios are seeded subsets of street-level flood reports (see docs/DATA_LIMITS.md, PHASE 3).
 
-Web app (Next.js, in `web/`):
+### Just running the web app (clean clone, no data download)
+The data the web app reads (`web/public/data/`, `web/src/i18n/`, `web/src/data/config.json`) is
+**committed to this repo**, so a fresh clone runs without installing Python or any raw dataset:
 ```
 cd web
 npm install
 npm run dev        # http://localhost:3000  (add ?lang=ta or ?lang=hi)
-npm run lint
 npm run build
 ```
-After changing `i18n/*.json` or `config.py` run `python scripts/export_web_i18n.py` and `python scripts/export_web_config.py` (tests fail if the web copies drift).
 
-Python note: the blueprint says 3.11; this machine has Python 3.13 only. The pinned packages installed on 3.13 without errors; behaviour on 3.11 is untested. The web app uses Node 24 and npm 11; `next/font` downloads Inter and IBM Plex Mono once at dev or build time (needs internet).
+### Rebuilding the data from source
+Only needed to change the analysis itself (flood thresholds, routing, scenarios, metrics).
+Needs internet once (OpenStreetMap roads, cached after the first run) and the raw datasets in
+`data/raw/` (see `SOURCES.md`; not committed, third-party licences: UNOSAT CC BY-NC-SA, OSM ODbL,
+OpenCity).
+```
+python -m venv .venv
+.venv\Scripts\python -m pip install -r requirements.lock.txt
+.venv\Scripts\python -m pytest
+.venv\Scripts\python scripts\build_all.py
+```
+`build_all.py` runs, in order: `build_phase2` (road graph, flood layers/scenarios), `build_phase3`
+(facilities, sample origins, ambulance starts), `build_wards` (Census 2011 ward join),
+`build_metrics`, `build_routes`, `build_isolation`, `build_audit`, then the two `export_web_*`
+scripts that copy Python's `i18n/` and `config.py` into `web/src/`. Commit `web/public/data/` and
+`web/src/` after running it. CI (`.github/workflows/ci.yml`) runs the Python tests and builds the
+web app on every push, but does not re-run `build_all.py` (the raw datasets aren't in CI, by
+licence) — it instead fails if the committed data under `web/public/data/` is missing.
+
+Python note: the blueprint says 3.11; this machine has Python 3.13 only. The pinned packages installed on 3.13 without errors; behaviour on 3.11 is untested. The web app uses Node 22+; `next/font` downloads Inter and IBM Plex Mono once at dev or build time (needs internet).
 
 ## Layout
 `config.py` (assumptions), `src/` (Python modules), `i18n/` (English, Tamil, Hindi, the source of truth), `web/` (Next.js interface), `tests/`, `docs/`, `data/raw/` (ignored), `data/processed/`.

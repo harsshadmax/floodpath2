@@ -1,4 +1,7 @@
 """Edge classification, facilities and routing on the synthetic grid (T-01 to T-05, T-08, T-09)."""
+import json
+from pathlib import Path
+
 import geopandas as gpd
 import pandas as pd
 import pytest
@@ -8,6 +11,20 @@ from config import CONFIG
 from src import facilities as fac
 from src import impact, route
 from tests.fixtures import LAT0, LON0, STEP, make_grid_graph
+
+ROOT = Path(__file__).resolve().parent.parent
+ROUTES_PATH = ROOT / "web" / "public" / "data" / "routes.json"
+
+# Pinned outcomes for three real Chennai ambulance-start points, read off web/public/data/routes.json
+# the last time the pipeline was run on the real road graph and the real flood-scenario geometries.
+# A change here means routing on real data has changed and must be looked at, not just re-pinned.
+PINNED_ROUTES = {
+    ("A01", "mild"): {"reachable": True, "facility_id": "F02", "time_min": 6.64},
+    ("A01", "severe"): {"reachable": True, "facility_id": "F01", "time_min": 13.08},
+    ("A02", "moderate"): {"reachable": True, "facility_id": "F02", "time_min": 21.40},
+    ("A02", "severe"): {"reachable": False, "facility_id": None, "time_min": None},
+    ("A03", "mild"): {"reachable": True, "facility_id": "F03", "time_min": 11.41},
+}
 
 
 def _metric_point(lon, lat):
@@ -95,6 +112,22 @@ def test_t03_unknown_service_never_chosen():
     assert {"facility_id": "F01", "reason": "SERVICE_NOT_CONFIRMED"} in excluded
     res = route.route_origin(G, G, 0, suitable, {})
     assert res.facility_id == "F02"
+
+
+@pytest.mark.skipif(not ROUTES_PATH.exists(), reason="routes.json not built yet (scripts/build_routes.py)")
+@pytest.mark.parametrize("point_id,scenario", list(PINNED_ROUTES))
+def test_pinned_real_route_outcome(point_id, scenario):
+    """Regression check on real Chennai data: catches a routing-code or scenario-geometry change
+    that silently shifts which facility is reached, or how long it takes, for real points."""
+    data = json.loads(ROUTES_PATH.read_text(encoding="utf-8"))
+    result = data["scenarios"][scenario][point_id]
+    expected = PINNED_ROUTES[(point_id, scenario)]
+    assert result["reachable"] == expected["reachable"]
+    assert result["facility_id"] == expected["facility_id"]
+    if expected["time_min"] is None:
+        assert result["time_min"] is None
+    else:
+        assert result["time_min"] == pytest.approx(expected["time_min"], abs=0.05)
 
 
 def test_far_facility_is_excluded_and_reported():
