@@ -7,9 +7,24 @@ single highest-value item left on the project (see `FloodPath-Care_Required_Chan
 Section 3) — a validated fact beats any further dashboard feature.
 
 Call the Chennai Corporation (GCC) Health Department first if possible; it may be able to confirm
-several units at once and point you to the right person at each site. GCC Health Department
-helpline / Ward office numbers change; look up the current one for the zone (Zone 7/8/9, Central
-Chennai) before calling, or ask 104 (Tamil Nadu health helpline) to route you.
+several units at once and point you to the right person at each site. Verified live on
+chennaicorporation.gov.in (2026-10-16; who-is-who page) -- these are the two offices to try, in
+order:
+
+1. **Medical Service Department** (oversees GCC's own emergency obstetric units, the most likely
+   match for your facilities): **Dr. C. Baby Ramono**, City Medical Officer (i/c). Phone
+   9445190857 / 044-25619338 / 9840746192. Email **dfwbeoc@gmail.com** (likely District Family
+   Welfare Bureau -- (Basic) Emergency Obstetric Care; matches your facilities' own "EOCU" naming)
+   and msdgcc2021@gmail.com.
+2. **Public Health Department**: **Dr. M. Jagadeesan**, City Health Officer, Grade I. Phone
+   044-25619337 / 044-25619330. Email **ho@chennaicorporation.gov.in**.
+3. **GCC Control Room / general**: 044-25384520 / 25384530 / 25384540, or the 24hr citizen line
+   **1913**, if neither office above can help.
+
+These are head-office contacts, not facility-specific numbers -- expect to be routed onward. Ask
+whoever answers for the Zonal Health Officer covering Purasaiwalkam, Shenoy Nagar and Saidapet
+(the three facilities actually on the road network), since they're more likely to know a specific
+unit's day-to-day capability.
 
 ## What "counts" as confirmed
 
@@ -52,9 +67,12 @@ list accurately instead of guessing."
 
 Use this when a call goes unanswered a few times, the facility has no listed phone number, or
 email is simply easier to send to several facilities at once. Send one email per facility (not one
-group email) so each reply is unambiguous about which facility it covers. If you have a Zonal
-Health Officer or GCC Health Department email instead of the facility's own, send it there and ask
-them to forward it or answer on the facility's behalf.
+group email) so each reply is unambiguous about which facility it covers.
+
+**Send to:** dfwbeoc@gmail.com (Medical Service Department -- most relevant, see above), with
+ho@chennaicorporation.gov.in (Public Health Department) cc'd so either office can pick it up.
+Send one copy of this email per facility, changing only the subject and the `[facility name]`
+fields, so five separate emails go out (F01-F05), each answerable independently.
 
 **Subject:** Quick question about emergency obstetric services at [facility name] — student civic
 project
