@@ -33,7 +33,7 @@ def test_unreachable_overall_and_no_invented_facility():
     r = result(reachable=False, facility_id=None, time_min=None,
                unreachable=[{"facility_id": "F01", "reason": "ORIGIN_CUT_OFF"}, {"facility_id": "F02", "reason": "ORIGIN_CUT_OFF"}])
     text = " ".join(explain.explain(r, "severe", "simulated", "D1", FAC, "en"))
-    assert "No suitable facility is reachable from this origin under the Severe scenario." in text
+    assert "No suitable facility is reachable from this origin under the 25% blocked scenario." in text
     assert "2 facility(ies)" in text and "minutes away" not in text
 
 
